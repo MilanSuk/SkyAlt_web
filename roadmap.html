@@ -1,0 +1,175 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="content-language" content="en" />
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<meta name="author" content="Milan Suk" />
+	<meta name="description" content="SkyAlt is a private place for organizing personal and work data" />
+	<meta name="keywords" content="office,software,productivity,organize,document,spreadsheet,database,crm,programming,low-code,no-code" />
+	
+	<link rel="icon" href="favicon.ico" />
+	
+	<title>SkyAlt - Roadmap</title>
+
+	<style type="text/css">
+	@font-face {
+	}
+	*{
+		padding: 0;
+		margin: 0;
+	}
+	body {
+	}
+	a{
+		text-decoration: underline;
+		color: black;
+	}
+	a:hover{
+		text-decoration: underline;
+		color: Rgba(210, 110, 100, 255);
+	}
+	h1{
+		font-size: 34px;
+		padding-top: 60px;
+		padding-bottom: 60px;
+		text-align: center;
+	}
+	h2{
+		font-size: 25px;
+		padding-top: 80px;
+		padding-bottom: 20px;
+		text-align: left;
+	}
+	p{
+		padding: 0px 0px 0px 0px;
+		line-height: 200%;
+		font-size: 18px;
+	}
+
+	#headerColor{
+		padding-top: 20px;
+		padding-bottom: 10px;
+		background-image: linear-gradient(to bottom right, #ffff33, #74dcd4);
+	}
+	#header, #header2{
+		width: 720px;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}
+	#logo{
+		float: left;
+	}
+
+	#roadmap p{
+		text-align: left;
+	}
+	</style>
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-52132022-1"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'UA-52132022-1');
+	</script>
+</head>
+
+<body>
+<div id="headerColor">
+<div id="header">
+	<div id="logo">
+	<a href="index.html"><img src="logo.png" alt="Login" width="150" height="56" /></a>
+	</div>
+
+	<div id="description">
+	<h1>Roadmap</h1>
+	</div>
+</div>
+</div>
+
+<div id="header2">
+	<div id="roadmap">
+
+	<h2>Dashboards</h2>
+	<p>Every folder can include sets of dashboards(pages). Dashboard is built by drag & drop tables or table views. It can also contain static data(titles, etc.) and simple expressions.<br/>
+Dashboards are updated in real-time.
+	</p>
+
+	<h2>Remote databases</h2>
+	<p>Right now, all SkyAlt data are inside the build-in database. This feature will add the option to connect to remote databases(MySQL, PostgreSQL, etc.) through ODBC.<br/>
+A user defines columns format(menu, checkbox, etc.) and be able to set/change data(not structure) in the original database. Users can also create views.<br/>
+Data from remote databases are cached in SkyAlt and re-download if needed.	
+	</p>
+
+	<h2>Time machine</h2>
+	<p>Users can go back in time and restore the project. Something like a Git. SkyAlt file system is already built that way(when a user hits "save", it saves only changes), so the only thing missing is UI.
+	</p>
+
+	<h2>Views</h2>
+	<p>
+		Map<br/>
+		Chart<br/>
+		Kanban<br/>
+		Calendar<br/>
+		Timeline(Gantt)<br/>
+	</p>
+
+	<h2>Rich-text</h2>
+	<p>Every text can be formated + multi-lines.<br/>
+For formating SkyAlt will use Markdown markup language.<br/>
+	</p>
+
+	<h2>Updates</h2>
+	<p>
+		SkyAlt checks If there is new version everytime is started and then every x hours/minutes. Can be disabled in settings.
+	</p>
+
+	<h2>Templates</h2>
+	<p>Library with project examples to show a high range of use-cases. Users can use them as a start point or learn from them.
+	</p>
+
+	<h2>API</h2>
+	<p>Run HTTPS server in SkyAlt so other programs can connect and extract/write data.
+	</p>
+
+	<h2>Automations</h2>
+	<p>You shouldn't repeat the same steps in SkyAlt over and over. Why not record those steps and then trigger them by pressing button, action or timer? Steps can be applied on one record or billions across different tables.
+	</p>
+
+	<h2>Data entry</h2>
+	<p>
+		Limits manual data entry to a minimum. Copy/paste and drag & drop are ok because it moves data precisely where you want, but writing text to cell is a problem.<br/>
+		The solution is probably scrapers(web, email, etc.). 
+	</p>
+
+	<h2>Files preview</h2>
+	<p>
+		Video<br/>
+		Audio<br/>
+		Pdfs<br/>
+		Docs<br/>
+		As many others formats as possible<br/>
+	</p>
+
+	<h2>File Search</h2>
+	<p>Right now, SkyAlt searches only text/numbers in cells, but not in files in cells.<br/>
+Support for HTML, DOC, XLS, PDF, text in images, etc..
+	</p>
+
+	<h2>Cloud</h2>
+	<p>Privacy is an important part of this project so cloud computing is great challenge. The best solution is to do computing on-premise. Data can be on-premise or end-to-end encrypted on a server(decryption key stays on clients devices) where a client can access them 24/7.<br/>
+On-premise server version can be in a container(for eg. Docker and Kubernetes).
+	</p>
+
+	<h2>OS support</h2>
+	<p>
+		Linux<br/>
+		MacOS<br/>
+		Android<br/>
+		iOS<br/>
+	</p>
+</div>
+</body>
+</html>
