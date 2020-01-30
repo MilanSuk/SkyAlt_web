@@ -1,5 +1,5 @@
 # SkyAlt
-A private place for organizing life & work data
+Accessible database and analytics
 
 ## Website
 https://www.skyalt.com/

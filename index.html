@@ -5,11 +5,11 @@
 	<meta http-equiv="content-language" content="en" />
 	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 	<meta name="author" content="Milan Suk" />
-	<meta name="description" content="SkyAlt is a private place for organizing personal and work data" />
+	<meta name="description" content="SkyAlt is a accessible database and analytics. />
 	<meta name="keywords" content="office,software,productivity,organize,document,spreadsheet,database,crm,programming,low-code,no-code" />
 	
 	<link rel="icon" href="favicon.ico" />
-	
+
 	<title>SkyAlt</title>
 
 	<style type="text/css">
@@ -26,11 +26,10 @@
 		color: black;
 	}
 	a b{
-		/*font-weight: normal;*/
 		color: Rgba(210, 110, 100, 255);
 	}
 	h1{
-		font-size: 34px;
+		font-size: 45px;
 		padding-top: 60px;
 		padding-bottom: 60px;
 		text-align: center;
@@ -48,12 +47,12 @@
 	p{
 		padding: 0px 0px 15px 0px;
 		line-height: 200%;
-		font-size: 20px;
+		font-size: 18px;
 	}
 	table, th, td{
 		padding: 50px 0px 50px 0px;
 		border-collapse: collapse;
-		font-size: 20px;
+		font-size: 18px;
 	}
 	table td i{
 		font-style: normal;
@@ -117,13 +116,13 @@
 	#screenshots p{
 		font-size: 18px;
 	}
-	#features p{
+	#basics p{
 		font-size: 18px;
 		margin: auto;
 	}
-	#features ul{
+	#basics ul{
 	}
-	#features ul li{
+	#basics ul li{
 		width: 200px;
 		height: 200px;
 		display: inline-flex;
@@ -131,10 +130,31 @@
 		padding: 10px;
 		margin: 5px;
 		border-radius: 1em;
-		background-color: #b7ede9;
+		border: 2px solid #b7ede9;
 	}
-	#features ul li a:hover {
-		color: black;
+	#basics ul li:hover {
+		border: 2px solid Rgba(210, 110, 100, 255);
+	}
+	#features ul{
+	}
+	#features ul li{
+		display: inline-flex;
+		margin: 30px 0px 30px 0px;
+	}
+	#features ul li p{
+		width: 140px;
+		font-size: 21px;
+		text-align: left;
+		margin-top: 60px;
+		font-style: italic;
+	}
+	#features ul li a img{
+		width: 550px;
+		border-radius: 1em;
+		border: 2px solid #b7ede9;
+	}
+	#features ul li a img:hover {
+		border: 2px solid Rgba(210, 110, 100, 255);
 	}
 	#download table{
 		background-color: Rgba(210, 110, 100, 255);
@@ -173,8 +193,8 @@
 	</div>
 
 	<div id="menu">
-	<a href="#features" title="Nuts and Bolts">Basics</a>
-	<a href="#screenshots" title="How it looks like">Screenshots</a>
+	<a href="#basics" title="Nuts and Bolts">Basics</a>
+	<a href="#features" title="How it looks like">Features</a>
 	<a href="#download" title="Try it"><b>Try it</b></a>
 	<a href="#pricing" title="Buy it">Pricing</a>
 	<a href="#faq" title="Frequently Asked Questions">FAQ</a>
@@ -182,33 +202,33 @@
 	</div>
 
 	<div id="description">
-	<h1>A private place for organizing life &amp; work data</h1>
-	<h2>Write notes, sort files, set reminders,<br/>store recipes, build CRM, ...<br/><br/>All in one <i>private</i> place.</h2>
+	<h1>Accessible database and analytics</h1>
+	<h2>Organize, search, filter, group and visualize any data</br></br>Connect to remote databases</h2>
 	</div>
 </div>
 </div>
 
 <div id="header2">
-	<div id="features">
+	<div id="basics">
 	<h3>Basics</h3>
 	<ul>
 	<li><p>Database</p></li>
 	<li><p>Analytics </p></li>
-	<li><p>Rich media</p></li>
+	<li><p>Easy to use</p></li>
 	<li><p>Self-hosted</p></li>
 	<li><p><a href="https://github.com/milansuk/skyalt/">Source code</a></p></li>
 	<li><p>Fast</p></li>
 	</ul>
 	</div>
 
-	<div id="screenshots">
-	<h3>Screenshots</h3>
+	<div id="features">
+	<h3>Features</h3>
 	<ul>
-	<li><a href="screenshots/high_1.png" title="Split screen"><img src="screenshots/low_1.png" alt="Split screen" width="128" height="128" /></a></li>
-	<li><a href="screenshots/high_2.png" title="Columns"><img src="screenshots/low_2.png" alt="Columns" width="128" height="128" /></a></li>
-	<li><a href="screenshots/high_3.png" title="Linking"><img src="screenshots/low_3.png" alt="Linking" width="128" height="128" /></a></li>
-	<li><a href="screenshots/high_4.png" title="Filters"><img src="screenshots/low_4.png" alt="Filters" width="128" height="128" /></a></li>
-	<li><a href="screenshots/high_5.png" title="Views"><img src="screenshots/low_5.png" alt="Views" width="128" height="128" /></a></li>
+	<li><p>Tables</p><a href="screens/table.png" title="Tables"><img src="screens/table_low.png" alt="Table" /></a></li>
+	<li><p>Cards</p><a href="screens/card.png" title="Cards"><img src="screens/card_low.png" alt="Cards" /></a></li>
+	<li><p>Groups</p><a href="screens/group.png" title="Groups"><img src="screens/group_low.png" alt="Groups" /></a></li>
+	<li><p>Maps</p><a href="screens/map.png" title="Maps"><img src="screens/map.png" alt="Map" /></a></li>
+	<li><p>Charts</p><a href="screens/chart.png" title="Charts"><img src="screens/chart.png" alt="Chart" /></a></li>
 	</ul>
 	</div>
 
@@ -216,8 +236,9 @@
 	<h3>Download</h3>
 	<table>
 		<tr>
-		<th><a href="https://github.com/MilanSuk/SkyAlt/releases/download/0.1/skyalt_win64_build_1.zip">Windows(64-bits)</a></th>
-		<th><a href="https://github.com/milansuk/skyalt/">Source Code</a></th>
+		<th><a href="https://github.com/milansuk/skyalt/releases/download/0.2/skyalt_win64_build_2.zip">Windows</a></th>
+		<th><a href="https://github.com/milansuk/skyalt/releases/download/0.2/skyalt_linux64_build_2.zip">Linux</a></th>
+		<th><a href="https://github.com/milansuk/skyalt/"><i>Source Code</i></a></th>
 		</tr>
 	</table>
 	</div>
@@ -227,30 +248,30 @@
 	<table>
 		<tr>
 		<th>Non-commercial</th>
-		<th>Small business<br />(Perpetual)</th>
-		<th>Business<br />(Perpetual)</th>
+		<th>Small business</th>
+		<th>Business</th>
 		</tr>
 
 		<tr>
 		<td>FREE</td>
-		<td><i>$99</i><br /><br />(Right now free)</td>
-		<td><i>$99 per user</i><br /><br />(Right now free)</td>
+		<td>$99 / year<br /></td>
+		<td>$20 user / month<br /></td>
 		</tr>
 		
 		<tr>
-		<td colspan="3"><b>Fully-featured &amp; unlimited!</b></td>
+		<td colspan="3"><b>Fully-featured &amp; unlimited</b></td>
 		</tr>
 	</table>
-	<p><i>VAT may apply</i></p>
-	<p><i>Small business earns less than $100,000 annually. Up to 5 users.</i></p>
-	<p><i>Perpetual = Pay once and use indefinitely. Upgrades are included for first year only.</i></p>
+	<p><i>Billed annually. VAT may apply.</i></p>
+	<p><i>Small business earns less than $100K annually. Up to 5 users.</i></p>
+	<p><b>For purchase, contact me at <a href="mailto:milan@skyalt.com">milan@skyalt.com</a></b></p>
 	</div>
 
 	<div id="faq">
 	<h3>FAQ</h3>
 	<p>
 		<b>Why did you make SkyAlt?</b><br/>
-		Few years back, I tried to find better way(than files&folders) how to organize my data. My requirements were simple:<br/>
+		I tried to find better way(than files&folders) how to organize my data. My requirements were simple:<br/>
 		<i>
 		- <b>Cheap</b>: I will use it for few decades<br/>
 		- <b>Scale</b>: We're talking terabytes here<br/>
@@ -261,28 +282,15 @@
 		<br/><br/>
 
 		<b>What are the use-cases?</b><br/>
-		SkyAlt is a database, which is easy to use like a spreadsheet. You can put anything into it. You can use it in your free time as well as at the office. Few examples: write notes, create a todo list, sort files, set reminders, store recipes, build CRM.
-		<br/><br/>
-
-		<b>Do you privide hosting/cloud?</b><br/>
-		No. Right now, my focus is on building best tool for organizing data. I wanna have stable and useful tool, then I will keep adding services around it.
+		SkyAlt is a database, which is easy to use as a spreadsheet. You can put anything into it. <b>You can use it in your free time as well as at the office.</b> Write notes, sort files, store recipes, build CRM or you can take advantage of analytics features - connect SkyAlt to remote database(s) and make reports, charts or geolocate addresses and render them on map.
 		<br/><br/>
 
 		<b>How much privacy do I have?</b><br/>
-		I started building SkyAlt for myself and I always want to use software which is open-source and unlimited. Software where sensitive data(financials, budgets, customer lists, etc.) are safe. No spyware. No backdoors. No Ads. No lock-in. You own &amp; control your data.
-		And that is SkyAlt. <b>I don't have your data and can't access it.</b> You can check the source-code.
+		I started building SkyAlt for myself and I always want to use software which is open-source and unlimited. Software where sensitive data(financials, budgets, customer lists, etc.) are safe. No spyware. No backdoors. No Ads. No lock-in. You own &amp; control your data. <b>I don't have your data and can't access it.</b> You can check the source-code.
 		<br/><br/>
 
 		<b>Is it Open-source?</b><br/>
 		You can check 100% of code on <a href="https://github.com/milansuk/skyalt">GitHub</a>. The code is released under <a href="https://mariadb.com/bsl11/">Bussiness Source License</a>, which gives you access to the source code and guarantees of converting to GPL after 5 years. I recognize that organizing your life's data will cost you a lot of time and energy. Thanks to source-available and self-hosting, you can be sure, <b>you will never lose what you've built in SkyAlt.</b>
-		<br/><br/>
-
-		<b>How do you make money?</b><br/>
-		Right now, SkyAlt is free for everyone. In time I will activate Enterprise tier for commercial companies. Consumers will stay in the free tier. There will be only one, fully-featured and unlimited(#projects, #tables, #columns, #records, etc.) version for everyone.
-		<br/><br/>
-
-		<b>Who are your competitors?</b><br/>
-		If you don't mind SaaS, you should try <a href="https://www.airtable.com">Airtable</a>, <a href="https://www.monday.com">Monday</a>, <a href="https://www.notion.so">Notion</a>. Do you want on-premise? Try <a href="https://products.office.com/access/">MS Access</a> or <a href="https://www.filemaker.com/">FileMaker</a>.
 		<br/><br/>
 
 		<b>How can I help?</b><br/>
@@ -301,7 +309,6 @@
 		<td><a href="mailto:milan@skyalt.com">E-mail</a></td>
 		<td><a href="https://twitter.com/milansuk">Twitter</a></td>
 		<td><a href="https://github.com/milansuk/skyalt/issues">Issues</a></td>
-		<td><a href="roadmap.html">Roadmap</a></td>
 		</tr>
 	</table>
 	</div>
