@@ -1,0 +1,365 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="content-language" content="en" />
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<meta name="author" content="Milan Suk" />
+	<meta name="description" content="SkyAlt is a accessible database and analytics. Organize and learn from data without engineers. />
+	<meta name="keywords" content="office,software,productivity,organize,document,spreadsheet,database,crm,programming,low-code,no-code" />
+	
+	<link rel="icon" href="../favicon.ico" />
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600i,800i&display=swap" rel="stylesheet"> 
+
+	<title>SkyAlt - Accessible database and analytics</title>
+
+	<style type="text/css">
+	@font-face {
+	}
+	*{
+		padding: 0;
+		margin: 0;
+		font-family: arial;
+		font-family: 'Open Sans', sans-serif;
+	}
+	body {
+		font-size: 18px;
+	}
+	a{
+		text-decoration: underline;
+		color: black;
+	}
+	h1{
+		padding-top: 90px;
+		padding-bottom: 70px;
+		text-align: center;
+
+		font-weight: 800;
+		font-size: 25px;
+		font-style: italic;
+		text-transform: uppercase;
+		word-spacing: 7px;
+	}
+	h2{
+		padding-top: 80px;
+		padding-bottom: 20px;
+		text-align: center;
+
+		font-weight: 800;
+		font-size: 23px;
+		font-style: italic;
+		text-transform: uppercase;
+	}
+	p{
+		text-align: left;
+		font-size: 18px;
+		line-height: 200%;
+	}
+
+	a:hover{
+		text-decoration: underline;
+		color: Rgba(210, 110, 100, 255);
+	}
+
+	#headerColor{
+		padding-top: 20px;
+		padding-bottom: 20px;
+		background-image: linear-gradient(to bottom right, #ffff33, #74dcd4);
+	}
+	#header, #header2{
+		width: 720px;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}
+	#logo{
+		float: left;
+	}
+	#menu{
+		float: right;
+		padding: 20px;
+	}
+	#menu a{
+		margin-left: 15px;
+		margin-right: 15px;
+		display: inline-flex;
+		vertical-align: middle;
+	}
+	#menu a img{
+		margin-right: -20px;
+	}
+	#menu a.button {
+		height: 20px;
+		background: Rgba(230, 130, 80, 255);
+		border-radius: 3px;
+		text-color: black;
+		text-align: center;
+		padding: 5px 50px 5px 50px;
+		
+		border: 1px solid Rgba(210, 150, 100, 255);
+		border-right: 1px solid Rgba(200, 120, 70, 255);
+		border-bottom: 1px solid Rgba(200, 120, 70, 255);
+
+		font-size: 15px;
+		text-decoration : none;
+	}
+
+	#menu a.button:hover{
+		background: Rgba(250, 140, 80, 255);
+		color: black;
+	}
+
+	#description{
+		clear: both;
+	}
+
+	#info p{
+		padding-top: 50px;
+		padding-bottom: 50px;
+		text-align: right;
+	}
+
+	#contact p{
+		font-size: 15px;
+		text-align: center;
+	}
+	#contact table{
+		width: 700px;
+		background-color: #b7ede9;
+		border-radius: 1em;
+		margin: 10px;
+	}
+	#contact table td{
+		font-weight: 600;
+		font-style: italic;
+		padding: 20px 0px 20px 0px;
+		border: 0;
+	}
+
+	video{
+		padding-top: 50px;
+		width:100%;
+	}
+
+	</style>
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-52132022-1"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'UA-52132022-1');
+	</script>
+</head>
+
+<body>
+<div id="headerColor">
+<div id="header">
+	<div id="logo">
+	<a href="../index.html"><img src="../logo.png" alt="Logo" width="150" height="56" /></a>
+	</div>
+
+	<div id="menu">
+	<a href="index.html" title="Other posts"><b>Articles</b></a>
+
+	<a href="index.html" title="Blog"><img src="../icons/blog32.png" alt="Blog" /></a>
+	<a href="https://github.com/milansuk/skyalt/" title="GitHub"><img src="../icons/github32.png" alt="GitHub" /></a>
+	<a href="https://twitter.com/milansuk" title="Twitter"><img src="../icons/twitter32.png" alt="Twitter" /></a>
+	<a href="mailto:milan@skyalt.com" title="E-mail"><img src="../icons/email32.png" alt="E-mail" /></a>
+	</div>
+
+	<div id="description">
+	<h1>I replaced 32K lines of 'C' with 3K lines of 'DSL'</h1>
+
+	</div>
+</div>
+</div>
+
+<div id="header2">
+
+	<p>
+	<br/><br/>
+	<i>For those who don't know SkyAlt. It's the software from which you connect to remote databases(or REST APIs), create user-friendly front-ends and get insights through reports and charts.</i>
+	</p>
+
+
+	<h2>Bugs everywhere</h2>
+	<p>
+I've worked on SkyAlt for more than a year. I released two builds, everything looked good, but 2 months ago, I run into a really big problem. Too many bugs, too many lines written in un-safe C language. I've programmed for almost 20 years, I shipped the products, but SkyAlt is the most complex project I've ever created it. I could use the common strategy to add new features and then keep testing it until it looks stable and hopes it's actually stable, but my goal is to build the best product on the market.
+<br/><br/>
+
+So the new goal was to express what I want from the computer in the most efficient way and avoid bugs which are harder to find. This happens to me from time to time, when I'm lost and I tried to rethink the whole thing from scratch and in most cases I end up with what I have. So basically, I waste my time. But sometimes big risk brings a big reward. 
+<br/><br/>
+
+The solution was obvious, a new language! Less accidental complexity. C is not great for large codebases, but it's a good place for creating fast interpreters. Have you heard about DSL(<a href="https://en.wikipedia.org/wiki/Domain-specific_language">Domain-specific language</a>)? I did, many times, and I ignore it every single time. But not this time.
+<br/><br/>
+
+So I paused adding new features to C code and started replacing a big part of the original code with less code in the language which I'm going to invent.
+	</p>
+
+
+	<h2>Intermission</h2>
+	<p>
+The First 3 days I had these crazy ideas about new programming languages, something with a declarative paradigm that would require some constraint solver to execute only what It needs. I realize that it would take months/years to build something like that and I wanna keep my "intermission" short as possible, since I'm running a startup.
+<br/><br/>
+
+It took one A4 paper and 1 m^2 of the white board, the rest was my imagination to came up with the language to significantly simplify my previous work. The syntax is very expressive for my use-cases(organizing and analyzing data - relational databases), with minimum accidental complexity. 
+<br/><br/>
+
+I was highly influenced by Bret Victor's <a href="https://vimeo.com/66085662">Drawing Dynamic Visualizations</a>.
+The code is procedural "tree" with permanent storage. So SkyAlt executes the whole tree and then it deletes all temporary data(variables in functions/blocks) and starts executing the whole tree from scratch. If you want to keep some data to the next "tick" you save it to permanent storage. This approach is really great for debugging(catching bugs quickly) since most of variables are reset after every "tick".
+<br/><br/>
+
+Try to imagine something like Immediate GUI, but I don't use it only for front-end(drawing Buttons, Combo-boxes, etc.), but also for the back-end(db connectors, filters, etc.). Otherwise it's dynamic typed, safer(no out-of-memory, malloc, free, etc.), easy to work with strings, ready for translations to foreign languages and much more. On the C side, it's just parser which creates the AST graph and then the interpreter goes through the graph and executes nodes.
+<br/><br/>
+
+In the beginning, porting SkyAlt was really slow, because often I had to go to C code and repair bugs in parser or interpreter, but later I spend most of my time writing code in my new language and I was blown away how fast I can actually add a feature. Fun.
+<br/><br/>
+<i>
+There were days when I fixed bugs.<br/>
+There were days when I changed the syntax.<br/>
+There were days when I added new features.<br/>
+There were days when I rewrote some parts from scratch.<br/>
+</i>
+<br/>
+In the end, I slept 1-2hours/night less, drink twice the amount of coffee and successfully ported 80-90% of original SkyAlt C code. It runs a little bit slower, but it's very stable!
+	</p>
+
+
+	<video controls>
+	<source src="dsl/comparision.mp4" type="video/mp4">
+	</video> 
+	<p>Comparision of SkyAlt build 2.5(all C) and SkyAlt build 3.0(C + new lang)</p>
+
+
+	<h2>Accidental complexity</h2>
+	<p>
+I thought about rewriting SkyAlt to Rust or Swift. But I really doubt that I would get 10x less code. C/C++, Java, Python, Rust, Swift are general languages that cover a very high range of use-cases and that's also their weakness. Sometimes things can become better with an army of macros(or templates), but I've never liked doing that to C.
+<br/><br/>
+
+When you work with general programming languages, you probably write open() and save(). In SkyAlt, there is no need to write code for reading/writing projects to file. There is de/serialization build in.
+<br/><br/>
+
+Many programmers have struggled with the progress bar. It's tricky, there are so many places in programs that may take longer to execute and they should tell users how long it will take. In SkyAlt you don't create progress bar and you don't update how much computing has to be done. The platform will figure it out. It's not 100% accurate, but it's better than code, where programmers ignore it(frozen) or they messed it up. And of course, if you press interupt then interpreter stop.
+<br/><br/>
+
+There is also one small thing, which saves me a lot of time. Many REST APIs return JSON, so I made a function that converts JSON to object structure. In SkyAlt, every object has value and sub-objects(which has values and sub-objects) and JSON nicely translates into it. For me it's simpler to work with objects than JSON. This is only possible because SkyAlt has dynamic typing.
+<br/><br/>
+
+But the hardest part was to avoid to make the language more complicated because it will run faster, have lower memory footprint or the C code parser can be shorter. No exception, the DSL first, parser and interpreter second. I'll have years to figure out how to make it super fast.
+	</p>
+
+
+	<h2>Real time</h2>
+	<p>
+A new language or platform is not just features, syntax or parser quality(warnings, etc.). When people talk about Doherty threshold(whatever actual number is), they mostly see it from the end-users perspective. But what about developers? Most of them go through this insane loop, over and over again:
+<br/><br/>
+<i>
+1) write code(maybe hit ctrl+s)<br/>
+2) compile + run or refresh page<br/>
+3) put program to state, which you wanna test(open project, dialog, etc.)<br/>
+4) search for a bug<br/>
+5) close the program<br/>
+and goto 1)
+</i>
+<br/><br/>
+
+Crazy, right? What every programmer should do is only write code and test. And with the current pipeline I do only steps 1 and step 4, nothing else! The saved time is tremendous.
+<br/><br/>
+
+My solution works for front-end and back-end, so It's not just drag &amp; drop GUI, but the whole program and It works for complex programs as well. There are many REPL and live programming solutions, but from what I saw, most of the developers don't use them in real productions.
+For example, I open a dialog, then a context menu and then I update code for the context menu in ordinary text editor. When I save the file, the platform recognizes that source code has been changed and renders the new context menu.
+<br/><br/>
+
+Yes, It's interpreted(not compiled), so it's slower, but there are two really cool advantages.
+First, users don't have to stop Skyalt process(project) to auto-update SkyAlt. Of course, this is only true if the binary file(C code) is intact.
+Second, you can do a lot of things with computers, like send a message or file, but can you send a running program to another computer? Right now, You can't do that with SkyAlt, but it should be simple to implement it.
+<br/><br/>
+
+You probably already know, what happens when programming is more "real-time". It's fun again.
+	</p>
+
+
+	<video controls>
+	<source src="dsl/src_edit.mp4" type="video/mp4">
+	</video> 
+	<p>When you update code, SkyAlt will update running program</p>
+
+
+	<h2>Numbers</h2>
+	<p>
+The original C code has 50K LOC(lines of code). The new C code has 24K LOC. I removed 32K LOC and added 5K LOC(mostly parser, interpreter).
+The code in my new language is only 3K LOC. So I ported 32K lines of C to 3K of language which I made. Hmm, not bad.
+The parser for new lang has 1K LOC and the interpreter has 4K LOC.
+<br/><br/>
+
+SkyAlt build 2.5(all in C lang) has 1.8MB. The build 3(C + new lang) has 1.0MB. So I removed cca 0.8MB of code. 3/4 million bytes of code with unknown bugs are gone now!
+<br/><br/>
+
+The Parser converts that 3K LOC to AST in 0.01 seconds. So when you start SkyAlt you can not feel it and when you update code it will take 1 second(it doesn't check If files have been changed every tick, but every second).
+<br/><br/>
+
+By the way, MSVC compiler compiles(release mode) the latest C code in 4 seconds and GCC finishes in 10 seconds.
+	</p>
+
+
+
+	<h2 id="ide">Game-changing 'IDE' for big data</h2>
+	<p>
+You know, how predicting the future is hard. This is the case. I've built this language to solve one big problem: too many bugs. But the experience using the language is so good, that I think, I should provide it to SkyAlt user so they can extend SkyAlt very easily.
+<br/><br/>
+
+The most of current software in the big data market is fixed. Few ones offer "blocks", which you have to code as an extension or plugin.
+<br/><br/>
+
+Here's a simple idea. Powerful software with 2 basis features: creating and applying assets. The big idea here is to provide an environment where people(not just programmers) can easily create assets, which they can apply and shape their data. Since the language is for organizing and analyzing big data, creating assets has some boundaries but it's still way better than what offers other players in the field.
+<br/><br/>
+
+You start with an empty project, you use a connector(asset) to your favorite database and bring data in. You wanna filter out some records, you use the appropriate asset or you can make/edit one. You wanna see your data as a chart, pick the right asset. This goes beyond dragging and dropping blocks(plugins) on the dashboard. You will be able to extend any place in your project and share that "know-how" with others.
+<br/><br/>
+
+There are two very important parts, which have to work very well. (1) Quickly searching for an asset. (2) Easily connecting asset to your project. Especially 2nd one is hard to crack. I have a plan on how to do that on paper, but because connecting assets together can be complex, it's better If most of the users don't do that. The key thing is that users don't share only assets, but also how and where they are connected to each other. It's like when someone makes and publishes a library, but also example code for how to work with a library. But in SkyAlt, asset connections will be automated. This is also why it's very important to build and grow the community - more assets, more connections, which means easier to use.
+<br/><br/>
+
+This idea pushes SkyAlt to a different game. I was building fixed features that I thought users wants and now It's about creating a community of people who will build and share the features. This is one hell of the changeover.
+	</p>
+
+
+	<h2>Summary</h2>
+	<p>
+If you wanna create domain-specific language, you need to have experiences in the specific domain. If you are building something which you know a little about, the only way how you get the experiences is that you spin out the language you know and write 5-15x more lines of code than what you would write in that "dream" language of yours. When you understand the domain, you are in a good position to make that "dream" language reality.
+<br/><br/>
+
+Just keep in mind, that DSL is mostly useful for long-term projects. For other people it will take some time to learn it, but long-term efficiency will be out of the roof!
+<br/><br/>
+
+My new language is not revolutionary or even evolutionary, it's just cleverly connected programming paradigms to solve 2 specific use-cases: Organizing and analyzing big data. It works very well.
+<br/><br/>
+
+Since I was able to port a very complex and large(for me) C codebase, I think that the language itself is pretty advanced and saved time in future development is great. If programming is art, this is the most creative programming, I've ever done. Now, It's time to give the same experience to everyone.
+	</p>
+
+
+	<div id="info">
+	<p>
+	Milan Suk<br/>
+	1st June, 2020
+	</p>
+	</div>
+
+
+	<div id="contact">
+	<p>Thanks for reading, feel free to try SkyAlt, send me an email or follow me on Twitter(<a href="https://twitter.com/milansuk">@milansuk</a>).</p>
+	<table>
+		<tr>
+		<td><a href="index.html">Blog</a></td>
+		<td><a href="https://github.com/milansuk/skyalt/">GitHub</a></td>
+		<td><a href="https://twitter.com/milansuk">Twitter</a></td>
+		<td><a href="mailto:milan@skyalt.com">E-mail</a></td>
+		</tr>
+	</table>
+	</div>
+</div>
+</body>
+</html>
