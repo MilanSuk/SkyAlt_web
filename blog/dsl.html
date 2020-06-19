@@ -241,10 +241,10 @@ I thought about rewriting SkyAlt to Rust or Swift. But I really doubt that I wou
 When you work with general programming languages, you probably write open() and save(). In SkyAlt, there is no need to write code for reading/writing projects to file. There is de/serialization build in.
 <br/><br/>
 
-Many programmers have struggled with the progress bar. It's tricky, there are so many places in programs that may take longer to execute and they should tell users how long it will take. In SkyAlt you don't create progress bar and you don't update how much computing has to be done. The platform will figure it out. It's not 100% accurate, but it's better than code, where programmers ignore it(frozen) or they messed it up. And of course, if you press interupt then interpreter stop.
+Many programmers have struggled with the progress bar. It's tricky, there are so many places in programs that may take longer to execute and they should tell users how long it will take. In SkyAlt you don't create progress bar and you don't update how much computing has been done. The platform will figure it out. It's not 100% accurate, but it's better than code, where programmers ignore it(frozen) or they messed it up. And of course, if you press interupt then interpreter stop.
 <br/><br/>
 
-There is also one small thing, which saves me a lot of time. Many REST APIs return JSON, so I made a function that converts JSON to object structure. In SkyAlt, every object has value and sub-objects(which has values and sub-objects) and JSON nicely translates into it. For me it's simpler to work with objects than JSON. This is only possible because SkyAlt has dynamic typing.
+There is also one small thing, which saves me a lot of time. Many REST APIs return JSON, so I made a function that converts JSON to object structure. In SkyAlt, every object has value and sub-objects(which have values and sub-objects) and JSON nicely translates into it. For me it's simpler to work with objects than JSON. This is only possible because SkyAlt has dynamic typing.
 <br/><br/>
 
 But the hardest part was to avoid to make the language more complicated because it will run faster, have lower memory footprint or the C code parser can be shorter. No exception, the DSL first, parser and interpreter second. I'll have years to figure out how to make it super fast.
