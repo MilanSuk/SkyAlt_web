@@ -31,23 +31,23 @@
 		color: black;
 	}
 	h1{
-		padding-top: 90px;
-		padding-bottom: 70px;
+		padding-top: 70px;
+		padding-bottom: 50px;
 		text-align: center;
 
 		font-weight: 800;
-		font-size: 36px;
+		font-size: 30px;
 		font-style: italic;
 		text-transform: uppercase;
 		word-spacing: 7px;
 	}
 	h2{
-		font-size: 22px;
-		padding-bottom: 70px;
+		font-size: 25px;
+		padding-bottom: 50px;
 		text-align: center;
 		line-height: 150%;
 
-		word-spacing: 15px;
+		/*word-spacing: 15px;*/
 		line-height: 200%;
 
 		font-weight: 400;
@@ -55,7 +55,7 @@
 	}
 	h3{
 		font-size: 30px;
-		padding: 80px 0px 30px 0px;
+		padding: 60px 0px 30px 0px;
 		text-align: center;
 		font-weight: 800;
 		font-style: italic;
@@ -64,34 +64,6 @@
 	p{
 		padding: 0px 0px 15px 0px;
 		line-height: 200%;
-	}
-	table, td{
-		font-style: italic;
-		padding: 15px 0px 15px 0px;
-		border-collapse: collapse;
-	}
-	table, th{
-		font-style: italic;
-		padding: 40px 0px 40px 0px;
-		border-collapse: collapse;
-	}
-
-	table td i{
-		color: Grey;
-	}
-	table{
-		width: 700px;
-		background-color: #b7ede9;
-		border-radius: 1em;
-		margin: 10px;
-	}
-	table td{
-		border-right: 3px solid White;
-		font-style: normal;
-	}
-	table th{
-		width: 200px;
-		border-right: 3px solid White;
 	}
 	a:hover{
 		text-decoration: underline;
@@ -150,75 +122,36 @@
 		clear: both;
 	}
 
-	#features{
-		margin-top: 40px;
-	}
-	#features ul{
-	}
-	#features ul li{
-		display: inline-flex;
-		margin: 30px 0px 30px 0px;
-		padding: 20px;
-		background-color: #b7ede9;
-		border-radius: 1em;
-	}
-	#features ul li h3{
-		width: 140px;
-		font-size: 20px;
-		text-align: left;
-		font-weight: 600;
-		font-style: italic;
-		text-transform: uppercase;
 
-		padding-top: 15px;
-		font-weight: bold;
-	}
-	#features ul li p{
-		width: 280px;
-		font-size: 18px;
+	#posts table{
+		width: 100%;
 		text-align: left;
-		/*font-weight: 600;*/
-		font-style: italic;
-		line-height: 150%;
-		padding: 10px;
+		margin-top: 100px;
+		margin-bottom: 100px;
+		border-spacing: 0px;
+	}
+	#posts table tr td{
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	#posts table tr td i{
+		font-style: normal;
+		color: Rgba(100, 100, 100, 255);
+	}
+	#posts table tr:hover{
+		background: Rgba(240, 240, 240, 255);
 	}
 
-	#features ul li a img{
-		width: 220px;
+
+	#contact p{
+		font-size: 15px;
+		text-align: center;
+	}
+	#contact table{
+		width: 700px;
+		background-color: #dcf5f2;
 		border-radius: 1em;
-		border: 2px solid #b7ede9;
-	}
-	#features ul li a img:hover {
-		border: 2px solid Rgba(210, 110, 100, 255);
-	}
-	#download table{
-		background-color: Rgba(210, 110, 100, 255);
-	}
-	#download table th{
-		padding: 40px 0px 40px 0px;
-		border: 0;
-	}
-	#download a:hover{
-		color: #b7ede9;
-	}
-	#download p{
-		margin: auto;
-		margin-top: 20px;
-	}
-	#download ul{
-	}
-	#download ul li{
-		width: 200px;
-		height: 80px;
-		display: inline-flex;
-		vertical-align: top;
-		padding: 10px;
-		margin: 5px;
-		border-radius: 1em;
-		border: 1px solid Rgba(210, 110, 100, 255);
-	}
-	#faq p{
-		text-align: left;
+		margin: 10px;
 	}
 	#contact table td{
 		font-weight: 600;
@@ -256,170 +189,25 @@
 	</div>
 
 	<div id="description">
-	<h1>Accessible database and analytics</h1>
-
-	<h2>#free #quick-setup #business-insights #data-modeling<br/>  #cross-databases #reports #charts #private #fast</h2>
-	
+	<h1>Integrated Development Environment</h1>
+	<h2>My journey about making programming better</h2>
 	</div>
 </div>
 </div>
 
 <div id="header2">
-	<div id="features">
-	<ul>
-	<li><h3>1) Connect</h3><p>Read data from remote sources. Support for databases and REST API.</p><a href="screens/white.png" title="Tables"><img src="screens/white.png" alt="Table" /></a></li>
-	<li><h3>2) Organize</h3><p>Convert raw data to checkboxes, menus, tags, and more. Cross-link multiple databases.</p><a href="screens/white.png" title="Cards"><img src="screens/white.png" alt="Cards" /></a></li>
-	<li><h3>3) Analyze</h3><p>Filter and sort by columns. Make a summary report, render charts.</p><a href="screens/white.png" title="Groups"><img src="screens/white.png" alt="Groups" /></a></li>
-	<li><h3>4) Export</h3><p>Get data out automatically. For example, send your favourite sales report to your email every 4 hours.</p><a href="screens/white.png" title="Maps"><img src="screens/white.png" alt="Map" /></a></li>
-	<li><h3>5) Customize</h3><p>Are you tired of fixed charts, views, widgets, blocks? Soon, we will release the <a href="blog/dsl.html#ide" title="Blog">"IDE for Big Data"</a>.</p><a href="screens/white.png" title="Charts"><img src="screens/white.png" alt="Chart" /></a></li>
-	</ul>
-	</div>
-
-
-	<div id="download">
-	<h3>Download</h3>
+	<div id="posts">
 	<table>
 		<tr>
-		<th>Coming soon</th>
-		<!--
-		<th><a href="https://github.com/milansuk/skyalt/releases/download/0.2/skyalt_win64_build_3.zip">Windows<br/>(5MB)</a></th>
-		<th><a href="https://github.com/milansuk/skyalt/releases/download/0.2/skyalt_linux64_build_3.zip">Linux<br/>(3MB)</a></th>
-		-->
+		<td><a href="blog/repl.html">Rethinking Coding &amp Debugging</a></td>
+		<td><i>26th October 2020</i></td>
+		</tr>
+
+		<tr>
+		<td><a href="blog/dsl.html">I replaced 32K lines of 'C' with 3K lines of 'DSL'</a></td>
+		<td><i>1st June 2020</i></td>
 		</tr>
 	</table>
-	<ul>
-	<li><p>Self-hosted</p></li>
-	<li><p><a href="https://github.com/milansuk/skyalt/"><b>Source code</b></a></p></li>
-	<li><p>No installation</p></li>
-	</ul>
-	</div>
-
-
-	<div id="pricing">
-	<h3>Pricing</h3>
-	<table>
-		<tr>
-		<th></th>
-		<th>SkyAlt DESKTOP</th>
-		<th>SkyAlt SERVER</th>
-		</tr>
-
-		<tr>
-		<td>Views</td>
-		<td>All</td>
-		<td>All</td>
-		</tr>
-
-		<tr>
-		<td>Connectors</td>
-		<td>All</td>
-		<td>All</td>
-		</tr>
-
-		<tr>
-		<td>Storage/Memory</td>
-		<td>Unlimited*</td>
-		<td>Unlimited*</td>
-		</tr>
-
-		<tr><td></td><td></td><td></td></tr>
-
-		<tr>
-		<td>On-premise</td>
-		<td>Yes</td>
-		<td>Yes</td>
-		</tr>
-
-		<tr>
-		<td>Collaborate</td>
-		<td>-</td>
-		<td><b>Yes</b></td>
-		</tr>
-
-		<tr>
-		<td>Authentication</td>
-		<td>-</td>
-		<td><b>SAML-based SSO,<br/>Google Sign-in</b></td>
-		</tr>
-
-		<tr><td></td><td></td><td></td></tr>
-
-		<tr>
-		<td>Source code</td>
-		<td><a href="https://github.com/milansuk/skyalt/" title="GitHub">Github</a></td>
-		<td><b>Customers only</b></td>
-		</tr>
-
-		<tr>
-		<td>License</td>
-		<td><a href="https://mariadb.com/bsl11/">BSL</a></td>
-		<td><b>Proprietary**</b></td>
-		</tr>
-
-		<tr>
-		<td>Support</td>
-		<td>Basic</td>
-		<td><b>Yes</b></td>
-		</tr>
-
-		<tr><td></td><td></td><td></td></tr>
-
-		<tr>
-		<td>Released</td>
-		<td>Soon</td>
-		<td><b>Soon</b></td>
-		</tr>
-
-
-		<tr>
-		<td>Price</td>
-		<td>FREE</td>
-		<td><b><a href="mailto:milan@skyalt.com">Contact us</a></b></td>
-		</tr>
-	</table>
-	<p><i>* SkyAlt as the software has no limits, but your hardware has limits.</i></p>
-	<p><i>** We provide source code and allow modification.</i></p>
-	</div>
-
-
-	<div id="faq">
-	<h3>Frequently Asked Questions</h3>
-	<p>
-		<i><b>How is SkyAlt different from competitors?</b></i><br/>
-		Fundamental SkyAlt requirements are:<br/>
-		- <b>Free</b>: Maybe you'll use it for a few decades<br/>
-		- <b>Scale</b>: We're talking terabytes here<br/>
-		- <b>Public source code</b>: It must run If SkyAlt goes out of business<br/>
-		- <b>Private</b>: Only You can access your data<br/>
-		<br/>
-		Our competitors have many shapes, but on the background it's the same sets of blocks, widgets, or views. You can set block properties, connect a block to other blocks, but you can NOT easily make a block.
-		<br/><br/>
-		Soon, we will release the <a href="blog/dsl.html#ide" title="Blog">"IDE for Big data"</a>, which will be all about customization. You'll easily make an Asset(that's how we call "block") from scratch or use an Asset from the library(customize it, if you want) and shape your data with it.
-		An asset can be a connector to database, filter, visualization, or whatever you wanna make. It can be small or complex. <b>SkyAlt is the place where any user can easily make a feature(Asset) and share it with other users, who can make that feature even 
-better</b>.
-		<br/><br/>
-
-		<i><b>How much privacy do I have?</b></i><br/>
-		SkyAlt is self-hosted. No spyware. No backdoors. No Ads. No lock-in. You own &amp; control your data. <b>We don't have your data and can't access it.</b> You can check the source code.
-		<br/><br/>
-
-		<i><b>Is it Open-source?</b></i><br/>
-		You can check 100% of the code on <a href="https://github.com/milansuk/skyalt">GitHub</a>. The code is released under <a href="https://mariadb.com/bsl11/">Bussiness Source License</a>, which gives you access to the source code and guarantees of converting to GPL after 5 years. We recognize that organizing data will cost you a lot of time and energy. Thanks to source-available and self-hosting, you can be sure, <b>you will never lose what you've built in SkyAlt.</b>
-		<br/><br/>
-
-		<i><b>Where do you make money?</b></i><br/>
-		SkyAlt DESKTOP is free and unlimited. It aims for small teams and consumers.<br/>
-		SkyAlt SERVER offers all features of the DESKTOP version, plus the ability for multiple users to collaborate on the same project. We charged for the SERVER version and also provide technical support. For comparison, please check <a href="#pricing" class="button" title="Pricing">Pricing</a>.
-		<br/><br/>
-
-		<i><b>How can I help?</b></i><br/>
-		You can report a bug and request new features on <a href="https://github.com/milansuk/skyalt/issues">GitHub</a> or send me an <a href="mailto:milan@skyalt.com">e-mail</a>.
-		<br/><br/>
-		
-		<i><b>Who are you?</b></i><br/>
-		My name is Milan Suk. I'm from the Czech Republic. I'm in my 30s. I focused mainly on computer graphics R&amp;D. In 2010, I released <a href="https://github.com/MilanSuk/BulletSOP">BulletSOP</a>(<a href="https://vimeo.com/77407481/">video</a>). The plugin for creating large rigid body simulations inside Sidefx Houdini, which was used in the production of movies <a href="http://www.imdb.com/title/tt1823672/">Chappie</a>(2015), <a href="http://www.imdb.com/title/tt2126355/">San Andreas</a>(2015) and few other smaller projects. In 2014, I've got an idea for the new low-code platform, which became SkyAlt ...
-		<br/><br/>
-	</p>
 	</div>
 
 	<div id="contact">

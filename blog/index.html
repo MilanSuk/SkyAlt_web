@@ -25,14 +25,15 @@
 	}
 	body {
 		font-size: 18px;
+		background: Rgba(247, 247, 247, 255);
 	}
 	a{
 		text-decoration: underline;
 		color: black;
 	}
 	h1{
-		padding-top: 90px;
-		padding-bottom: 70px;
+		padding-top: 30px;
+		padding-bottom: 50px;
 		text-align: center;
 
 		font-weight: 800;
@@ -42,9 +43,9 @@
 		word-spacing: 7px;
 	}
 	h2{
-		padding-top: 40px;
-		padding-bottom: 40px;
-		text-align: center;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		text-align: left;
 
 		font-weight: 800;
 		font-size: 15px;
@@ -110,7 +111,30 @@
 
 	#description{
 		clear: both;
+		padding-top: 0px;
+		padding-bottom: 0px;
 	}
+
+
+	#posts table{
+		width: 100%;
+		text-align: left;
+		margin-top: 50px;
+		margin-bottom: 100px;
+		border-spacing: 0px;
+	}
+	#posts table tr td{
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	#posts table tr td i{
+		font-style: normal;
+		color: Rgba(100, 100, 100, 255);
+	}
+	#posts table tr:hover{
+		background: Rgba(240, 240, 240, 255);
+	}
+
 
 	#contact p{
 		font-size: 15px;
@@ -153,13 +177,30 @@
 	<a href="mailto:milan@skyalt.com" title="E-mail"><img src="../icons/email32.png" alt="E-mail" /></a>
 	</div>
 
+
 	<div id="description">
-	<h2><a href="dsl.html">I replaced 32K lines of 'C' with 3K lines of 'DSL'</a> (1st June 2020)</h2>
+	<h1>Articles</h1>
 	</div>
+
+
 </div>
 </div>
 
 <div id="header2">
+	<div id="posts">
+	<table>
+		<tr>
+		<td><a href="repl.html">Rethinking Coding &amp Debugging</a></td>
+		<td><i>26th October 2020</i></td>
+		</tr>
+
+		<tr>
+		<td><a href="dsl.html">I replaced 32K lines of 'C' with 3K lines of 'DSL'</a></td>
+		<td><i>1st June 2020</i></td>
+		</tr>
+	</table>
+	</div>
+
 	<div id="contact">
 	<table>
 		<tr>

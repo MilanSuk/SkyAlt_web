@@ -1,5 +1,5 @@
 # SkyAlt
-Accessible database and analytics
+My journey about making programming better
 
 ## Website
 https://www.skyalt.com/

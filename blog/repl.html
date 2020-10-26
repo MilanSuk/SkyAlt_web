@@ -1,0 +1,315 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="content-language" content="en" />
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<meta name="author" content="Milan Suk" />
+	<meta name="description" content="SkyAlt is a accessible database and analytics. Organize and learn from data without engineers. />
+	<meta name="keywords" content="office,software,productivity,organize,document,spreadsheet,database,crm,programming,low-code,no-code" />
+	
+	<link rel="icon" href="../favicon.ico" />
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600i,800i&display=swap" rel="stylesheet"> 
+
+	<title>SkyAlt - Accessible database and analytics</title>
+
+	<style type="text/css">
+	@font-face {
+	}
+	*{
+		padding: 0;
+		margin: 0;
+		font-family: arial;
+		font-family: 'Open Sans', sans-serif;
+	}
+	body {
+		font-size: 18px;
+		background: Rgba(247, 247, 247, 255);
+	}
+	a{
+		text-decoration: underline;
+		color: black;
+	}
+	h1{
+		padding-top: 90px;
+		padding-bottom: 70px;
+		text-align: center;
+
+		font-weight: 800;
+		font-size: 25px;
+		font-style: italic;
+		text-transform: uppercase;
+		word-spacing: 7px;
+	}
+	h2{
+		padding-top: 80px;
+		padding-bottom: 20px;
+		text-align: center;
+
+		font-weight: 800;
+		font-size: 23px;
+		font-style: italic;
+		text-transform: uppercase;
+	}
+	p{
+		text-align: left;
+		font-size: 18px;
+		line-height: 200%;
+	}
+
+	a:hover{
+		text-decoration: underline;
+		color: Rgba(210, 110, 100, 255);
+	}
+
+	#headerColor{
+		padding-top: 20px;
+		padding-bottom: 20px;
+		background-image: linear-gradient(to bottom right, #ffff33, #74dcd4);
+	}
+	#header, #header2{
+		width: 720px;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}
+	#logo{
+		float: left;
+	}
+	#menu{
+		float: right;
+		padding: 20px;
+	}
+	#menu a{
+		margin-left: 15px;
+		margin-right: 15px;
+		display: inline-flex;
+		vertical-align: middle;
+	}
+	#menu a img{
+		margin-right: -20px;
+	}
+	#menu a.button {
+		height: 20px;
+		background: Rgba(230, 130, 80, 255);
+		border-radius: 3px;
+		text-color: black;
+		text-align: center;
+		padding: 5px 50px 5px 50px;
+		
+		border: 1px solid Rgba(210, 150, 100, 255);
+		border-right: 1px solid Rgba(200, 120, 70, 255);
+		border-bottom: 1px solid Rgba(200, 120, 70, 255);
+
+		font-size: 15px;
+		text-decoration : none;
+	}
+
+	#menu a.button:hover{
+		background: Rgba(250, 140, 80, 255);
+		color: black;
+	}
+
+	#description{
+		clear: both;
+	}
+
+	#info p{
+		padding-top: 50px;
+		padding-bottom: 50px;
+		text-align: right;
+	}
+
+	#contact p{
+		font-size: 15px;
+		text-align: center;
+	}
+	#contact table{
+		width: 700px;
+		background-color: #b7ede9;
+		border-radius: 1em;
+		margin: 10px;
+	}
+	#contact table td{
+		font-weight: 600;
+		font-style: italic;
+		padding: 20px 0px 20px 0px;
+		border: 0;
+	}
+
+	video{
+		padding-top: 50px;
+		width:100%;
+	}
+
+	</style>
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-52132022-1"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'UA-52132022-1');
+	</script>
+</head>
+
+<body>
+<div id="headerColor">
+<div id="header">
+	<div id="logo">
+	<a href="../index.html"><img src="../logo.png" alt="Logo" width="150" height="56" /></a>
+	</div>
+
+	<div id="menu">
+	<a href="index.html" title="Other posts"><b>Articles</b></a>
+
+	<a href="index.html" title="Blog"><img src="../icons/blog32.png" alt="Blog" /></a>
+	<a href="https://github.com/milansuk/skyalt/" title="GitHub"><img src="../icons/github32.png" alt="GitHub" /></a>
+	<a href="https://twitter.com/milansuk" title="Twitter"><img src="../icons/twitter32.png" alt="Twitter" /></a>
+	<a href="mailto:milan@skyalt.com" title="E-mail"><img src="../icons/email32.png" alt="E-mail" /></a>
+	</div>
+
+	<div id="description">
+	<h1>Rethinking Coding &amp; Debugging</h1>
+	</div>
+</div>
+</div>
+
+<div id="header2">
+	<p>
+<br/><br/>
+<i>In the <a href="dsl.html" title="I replaced 32K lines of 'C' with 3K lines of 'DSL'">last article</a> I wrote about how I moved from "Too many bugs in C code", over "This new programming language is fun" to "I will build a platform where users will build & share features". In this article, I wanna write about a better approach for navigating code and debugging.</i>
+	</p>
+
+
+	<h2>Progress</h2>
+	<p>
+There are two things which have improved software development in the last few decades:
+<br/><br/>
+
+<i>
+<b>(a) Better programming languages</b>. So we can have fewer bugs, especially  "hard to find" bugs. The big question here: is it possible to push it significantly further?
+<br/><br/>
+
+<b>(b) Better IDEs</b>. I believe there is a lot of space for improvements!
+</i>
+<br/><br/>
+
+There is a new programming language maybe every month, but how often is there a new IDE? Few years? Building IDE is hard. Even that simple idea of that I will show you in this article took me a week to implement.
+<br/><br/>
+
+IDE is a place which brings code, compiler and debugger closer to the user. User experience for writing and understanding the code is super important. It's a place where people like me spend a big part of their lives. 
+	</p>
+
+
+
+	<h2>Modern "IDE"</h2>
+	<p>
+Lately, We have a lot of No/Low code platforms rising up. They call them Productivity tools, but they are basically IDEs(Integrated Development Environments). In a most extreme cases it's simple drag & drop blocks or nodes on canvas. The problem is those platforms restrict you with a few specific tools and places where you can apply them. They are optimized for few use-cases. Compromise and you get easy to use. That's the name of the game. 
+<br/><br/>
+
+In the last ~5 years, I did a lot of research and development(many MVPs) in the no-code area and it's definitely possible to make a general programming environment without writing text/code, but doing that you will be slow, very slow.
+	</p>
+
+
+	<h2>Text matters</h2>
+	<p>
+I believe that the most efficient way how to explain to the computer what to do is through text! The learning curve for writing code is crazy. I'm not surprised that so many people give up. There has to be some invisible force, keeping your motivation up enough to continue.
+<br/><br/>
+
+I'm not a big fan of pure text programming. I like IDEs with debuggers, refactoring, REPL, auto-complete, fast code navigation, etc.. I'm a huge believer in low-code, in terms of that everything is code, but you don't have to write all of it. Using the keyboard in all situations doesn't make sense: picking a color is better than writing "120, 64, 80", drawing a rectangle with a mouse is better than writing numbers as parameters.
+<br/><br/>
+
+Learning how to write on a keyboard with all fingers without looking takes 20-40hours, but then you will be way more efficient for decades. In the beginning, it's hard to start coding, but when you "made it", your efficiency will be out of the roof and you'll eat no-code programmers for breakfast.
+<br/><br/>
+
+I get it, text is not sexy. Try to imagine super happy &amp; smiling people in ads, touching the screen ... with code on it ... Ouch. But text works!
+<br/><br/>
+
+
+Ok, no more theory, let's move to the new stuff.
+	</p>
+
+
+
+
+
+	<h2>No jumps</h2>
+	<p>
+Many say that a code is like a book. You read a book from left to right, top to bottom, another page, another chapter. But with code, it's not like that. It's chaos. You start in main() and then you jump from one place to another, forward and back until a call-stack in your brain is full. Coding is more like the 2nd season of Westworld. Non-linear storytelling. You probably don't like it, unless you really are into solving puzzles.
+<br/><br/>
+
+
+But what If instead of procedural code, the code would be a stream of lines? You call some function(fill parameters) and the body just shows up below it. So your focus is not disturbed. The advantage is there are no jumps(while reading text), which especially beginners appreciate.
+<br/><br/>
+
+For debugging, there is no need for a call-stack(a list which shows you jump in the code). Normally, setting a break-point is not easy, because the program can visit the line through multiple paths(function can be a call from different places), so you spend time debugging that path to the line. In SkyAlt, you just unfold the particular function call and see the body, so debugging gets much easier.
+<br/><br/>
+
+I'm testing it only for a few days, but reading, creating and editing code feels really good.
+<br/><br/>
+
+<i>Note: The SkyAlt syntax is adjusted for this kind of folding - you can have only one function call on the line. In many other languages, you can have multiple functions calls on one line(as parameters) and then of course is not possible to show all their bodies in linear text space.</i>
+	</p>
+
+	<video controls poster="repl/folding.png">
+	<source src="repl/folding.mp4" type="video/mp4">
+	</video> 
+	<p><i>SkyAlt build 3(alpha).</i></p>
+
+	<h2>Visual REPL</h2>
+	<p>
+Programmers talk about the accidental complexity of programming languages all the time, but what about the accidental complexity of IDEs. What do you do when you see a bug in GUI? Do you think which class is it? And where will you set the breaking point? Or do you just press alt-key and click into GUI? Because the last option is SkyAlt way. One-click into GUI. Bum. You debugging the line of code, which draws that part.
+<br/><br/>
+
+SkyAlt execution model is ImGui(Immediate mode GUI), so every frame starts by calling Main() function with a clean frame buffer. When you write code, SkyAlt has preview panel which shows you how the app looks on the line which you're working on. Of course, the preview is live so you can click/write into it, but the interpreter will stop when your current line is hit and starts another frame calling Main() again. When you creating code, it's easier to catch bugs than using some reactive model, when something triggers something and so on. Check the video.
+<br/><br/>
+
+
+<i>Note: I originally think that the alt+click idea was mine, but later I realized that a few years back I saw it in Bret Victor's <a href="https://vimeo.com/36579366">Inventing on Principle</a>. Although, my implementation is a little more advanced because SkyAlt will show you the whole "call stack". In his video he probably just save line number to pixels, so you don't know from which place the function was called.
+</i>
+	</p>
+
+	<video controls poster="repl/alt.png">
+	<source src="repl/alt.mp4" type="video/mp4">
+	</video> 
+	<p><i>SkyAlt build 3(alpha). In the video I alt-clicked on "Show all" button and later on "X" button.</i></p>
+
+	<h2>Summary</h2>
+	<p>
+Making only programming languages is not enough. We need more IDEs. Different approaches how to create and navigate code faster.
+<br/><br/>
+
+If you don't wanna learn how to code, because there is no-code, you will never be as free and efficient as people writing code.
+<br/><br/>
+
+I presented the new way how to create code without jumping through text. This approach nicely fits for live debugging(no call stack) as well. Also If you alt + click to program's GUI, SkyAlt will show the part of the code where that GUI was made. It's a huge time saver.
+<br/><br/>
+
+I really love SkyAlt and I wanna build every new idea I have in it. I don't wanna program in other languages and IDEs anymore.
+	</p>
+
+
+	<div id="info">
+	<p>
+	Milan Suk<br/>
+	26th October, 2020
+	</p>
+	</div>
+
+
+	<div id="contact">
+	<p>Thanks for reading, feel free to try SkyAlt, send me an email or follow me on Twitter(<a href="https://twitter.com/milansuk">@milansuk</a>).</p>
+	<table>
+		<tr>
+		<td><a href="index.html">Blog</a></td>
+		<td><a href="https://github.com/milansuk/skyalt/">GitHub</a></td>
+		<td><a href="https://twitter.com/milansuk">Twitter</a></td>
+		<td><a href="mailto:milan@skyalt.com">E-mail</a></td>
+		</tr>
+	</table>
+	</div>
+</div>
+</body>
+</html>
