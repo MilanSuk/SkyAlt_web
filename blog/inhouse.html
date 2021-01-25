@@ -1,0 +1,324 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="content-language" content="en" />
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<meta name="author" content="Milan Suk" />
+	<meta name="description" content="SkyAlt is a place where you program stuff />
+	<meta name="keywords" content="programming,low-code,no-code,ide,software,inhouse,internal,tools" />
+	
+	<link rel="icon" href="../favicon.ico" />
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600i,800i&display=swap" rel="stylesheet"> 
+
+	<title>SkyAlt</title>
+
+	<style type="text/css">
+	@font-face {
+	}
+	*{
+		padding: 0;
+		margin: 0;
+		font-family: arial;
+		font-family: 'Open Sans', sans-serif;
+	}
+	body {
+		font-size: 18px;
+		background: Rgba(247, 247, 247, 255);
+	}
+	a{
+		text-decoration: underline;
+		color: black;
+	}
+	h1{
+		padding-top: 90px;
+		padding-bottom: 70px;
+		text-align: center;
+
+		font-weight: 800;
+		font-size: 25px;
+		font-style: italic;
+		text-transform: uppercase;
+		word-spacing: 7px;
+	}
+	h2{
+		padding-top: 80px;
+		padding-bottom: 20px;
+		text-align: center;
+
+		font-weight: 800;
+		font-size: 23px;
+		font-style: italic;
+		text-transform: uppercase;
+	}
+	p{
+		text-align: left;
+		font-size: 18px;
+		line-height: 200%;
+	}
+
+	a:hover{
+		text-decoration: underline;
+		color: Rgba(210, 110, 100, 255);
+	}
+
+	#headerColor{
+		padding-top: 20px;
+		padding-bottom: 20px;
+		background-image: linear-gradient(to bottom right, #ffff33, #74dcd4);
+	}
+	#header, #header2{
+		width: 720px;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}
+	#logo{
+		float: left;
+	}
+	#menu{
+		float: right;
+		padding: 20px;
+	}
+	#menu a{
+		margin-left: 15px;
+		margin-right: 15px;
+		display: inline-flex;
+		vertical-align: middle;
+	}
+	#menu a img{
+		margin-right: -20px;
+	}
+	#menu a.button {
+		height: 20px;
+		background: Rgba(230, 130, 80, 255);
+		border-radius: 3px;
+		text-color: black;
+		text-align: center;
+		padding: 5px 50px 5px 50px;
+		
+		border: 1px solid Rgba(210, 150, 100, 255);
+		border-right: 1px solid Rgba(200, 120, 70, 255);
+		border-bottom: 1px solid Rgba(200, 120, 70, 255);
+
+		font-size: 15px;
+		text-decoration : none;
+	}
+
+	#menu a.button:hover{
+		background: Rgba(250, 140, 80, 255);
+		color: black;
+	}
+
+	#description{
+		clear: both;
+	}
+
+	#info p{
+		padding-top: 50px;
+		padding-bottom: 50px;
+		text-align: right;
+	}
+
+	#contact p{
+		font-size: 15px;
+		text-align: center;
+	}
+	#contact table{
+		width: 700px;
+		background-color: #b7ede9;
+		border-radius: 1em;
+		margin: 10px;
+	}
+	#contact table td{
+		font-weight: 600;
+		font-style: italic;
+		padding: 20px 0px 20px 0px;
+		border: 0;
+	}
+
+	video{
+		padding-top: 50px;
+		width:100%;
+	}
+
+	</style>
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-52132022-1"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'UA-52132022-1');
+	</script>
+</head>
+
+<body>
+<div id="headerColor">
+<div id="header">
+	<div id="logo">
+	<a href="../index.html"><img src="../logo.png" alt="Logo" width="150" height="56" /></a>
+	</div>
+
+	<div id="menu">
+	<a href="index.html" title="Other posts"><b>Articles</b></a>
+
+	<a href="index.html" title="Blog"><img src="../icons/blog32.png" alt="Blog" /></a>
+	<a href="https://github.com/milansuk/skyalt/" title="GitHub"><img src="../icons/github32.png" alt="GitHub" /></a>
+	<a href="https://twitter.com/milansuk" title="Twitter"><img src="../icons/twitter32.png" alt="Twitter" /></a>
+	<a href="mailto:milan@skyalt.com" title="E-mail"><img src="../icons/email32.png" alt="E-mail" /></a>
+	</div>
+
+	<div id="description">
+	<h1>In-house software</h1>
+	</div>
+</div>
+</div>
+
+<div id="header2">
+
+<p>
+<br/><br/>
+<i>I've <a href="sprint.html">built IDE</a>, now what?</i>
+</p>
+
+	<h2>Market</h2>
+	<p>
+I've built SkyAlt to make my programming better. Now I wanna give it to programmers out there.
+
+Here are possible use-cases for SkyAlt right now:
+<br/><br/>
+
+<b>Learning how to code</b>
+<br/>
+
+There are plenty of platforms already. <a href="https://repl.it">Repl.it</a> is really hot these days.
+<br/><br/>
+
+<b>Internet of Things</b>
+<br/>
+<a href="https://nodered.org/">Node-RED</a> has been around for some time and has a big community and eco-system already.
+<br/><br/>
+
+<b>In-house(Internal) tools</b>
+<br/>
+This market is huge! There are really good companies: <a href="https://airtable.com">Airtable</a>, <a href="https://retool.com">Retool</a>, <a href="https://zapier.com">Zapier</a>.
+<br/><br/>
+
+<b>Internet-scale Operation system</b>
+<br/>
+There are tens of companies which try to build Internet-scale computer(not OS): <a href="https://ethereum.org">Ethereum</a>, <a href="https://dfinity.org">Dfinity</a>, <a href="https://near.org">NEAR Protocol</a>, etc.. Most of them are in private beta stages. Only a few published their product and I see many unsolved problems. I like this challenge a lot!
+	</p>
+
+
+	<h2>Long-term vision</h2>
+	<p>
+The problem which spread through the whole tech industry(and far beyond) is <b>artificial trust</b>, which is "created" by manipulating users and customers by shaping the brand and promising stability and security. You can see it in growing pressure on social networks and app stores. The core problem is that back-ends are black boxes and their owners can change the rules anytime. There is no way how cloud providers and SaaS companies can provide real trust.
+<br/><br/>
+
+That cloud of problems can be solved with blockchain and transparent governance. For example, try to imagine a P2P app store where everything is source-available(or open-source) and rules would be set by the community. No data lock-in and all apps are transparent and run all the time, no matter what. In other words, what we need is <b>mathematical proofs, that we can trust!</b>
+<br/><br/>
+
+My long-term vision for SkyAlt is an Internet-scale Operation system. SkyAlt will be the platform, where you build, debug, test, deploy and update secure decentralized apps as simple as possible. It's one holistic language for front-end and back-end. The difference between internet-scale computer and OS is that the computer is a bottom layer(machine code, assembler, bytecode), compare to OS, which is a place way more accessible to humans.
+<br/><br/>
+
+Many people work on the solution, but there is still a lot of blockchain R&D that needs to be done. It's too early, I can't build DApp platform right now, but can I market it?
+	</p>
+
+
+
+	<h2>Short-term goal</h2>
+	<p>
+Ok, so I need something which attracts developers and is very useful for them today. The important part is that what they build today they will have to be able to re-use it in the future to build DApps(decentralize applications). Luckily, the other use case for SkyAlt is building in-house software and I can see how In-house and DApps use-cases overlap.
+<br/><br/>
+
+The many startups who try to build blockchain computers face the chicken-egg problem. No one knows what the killer DApps are in this new space, so it's not easy to attract developers. In my case, I wanna build a community of developers on the in-house tools market which is huge and predictable already. So today developers can build in-house tools and later they may run that code(or parts) on the internet-scale computer.
+<br/><br/>
+
+Even I'm not making a DApps platform right now, the direction of the in-house tools must be compatible with the long term vision. So SkyAlt has to be open-source(Apache 2.0), unlimited and free. Competition on the in-house tools market must charge their customers, but I'll monetize through the DApps platform, so you can make in-house tools for free and it's gonna stay like that. The source code is under Apache 2.0 without any extra clause, so there is no other way anyway.
+<br/><br/>
+
+Let's see the competition on the in-house tools market. Airtable and Zapier are very easy to use, so their typical user is not a programmer. On another side when they don't support your use-case, you can extend it, but you have to know how to code.
+<br/><br/>
+
+Retool is different. First of all, you can build GUI with drag & drop, but you don't write code in one main editor, instead you write chunks of code into pre-define attributes in panels. From my point of view, this is it's a weakness because code is split across GUI. If it was in one text(file), you can review and understand it quicker.
+<br/><br/>
+
+SkyAlt is different, because everything that you do, you can see as code in a text file, but in more and more situations you can use GUI to generate and shape that code without writing anything. Debugging is also fun. I've started to add new APIs to support this new direction(In-house apps) and I've built 3 demos.
+	</p>
+
+
+
+	<h2>Demo - Orders</h2>
+	<p>
+I've already mention Retool. This demo recreates project which you can see on their <a href="https://retool.com">home page</a> or <a href="https://www.youtube.com/watch?v=8ZrJtnCKlxk">youtube</a>.
+<br/><br/>
+
+I was really interested in achieving the same result with few lines of code. And If you think about it, what they did in the video are these few steps.
+<a href="inhouse/code.png"><img src="inhouse/code.png" alt="Code" width="720" /></a>
+The code is both(back/front-end) in one! I didn't write the whole code. It was created by dragging & dropping, auto-complete, and writing a few expressions aka parameters.
+<br/><br/>
+
+In the background, I run MariaDB, which is connected through ODBC. In the video, you can see step-by-step debugging and how the final app works.
+	</p>
+	<video controls poster="inhouse/orders.png">
+	<source src="inhouse/orders.mp4" type="video/mp4">
+	</video> 
+
+
+
+	<h2>Demo - Analytics</h2>
+	<p>
+The hardest part of this demo was to create the connecter(guide) which connects to google analytics. This is not in the video. Then It was quick to write REST call, which downloads data, which are then projected into the chart.
+<br/><br/>
+You can pick the color, set start & end dates, and change time-step(hourly, daily, etc.).
+	</p>
+	<video controls poster="inhouse/analytics.png">
+	<source src="inhouse/analytics.mp4" type="video/mp4">
+	</video> 
+
+
+
+	<h2>Demo - Map</h2>
+	<p>
+With this demo, I tried to go low level. It downloads tiles from the OSM server, computes tile's positions on the screen, and draw them. You can set latitude, longitude, and zoom of the camera in edit boxes at the bottom. It also draws map scale at the left-bottom corner and can visualize position with markers. Tile files are cached on disk.
+	</p>
+	<video controls poster="inhouse/map.png">
+	<source src="inhouse/map.mp4" type="video/mp4">
+	</video> 
+
+
+
+
+	<h2>Summary</h2>
+	<p>
+I like the challenge of building Internet-scale OS. But It's too early. On another side with a platform where you can build in-house software, I can control and predict the future much better. This should create a community of developers who will re-use their code for building DApps later.
+<br/><br/>
+
+This is only the beginning. There is so much more and it's coming.
+	</p>
+
+
+	<div id="info">
+	<p><i>
+	Milan Suk<br/>
+	25th January, 2021
+	</i></p>
+	</div>
+
+
+	<div id="contact">
+	<p>Thanks for reading, feel free to try SkyAlt, send me an email or follow me on Twitter(<a href="https://twitter.com/milansuk">@milansuk</a>).</p>
+	<table>
+		<tr>
+		<td><a href="index.html">Blog</a></td>
+		<td><a href="https://github.com/milansuk/skyalt/">GitHub</a></td>
+		<td><a href="https://twitter.com/milansuk">Twitter</a></td>
+		<td><a href="mailto:milan@skyalt.com">E-mail</a></td>
+		</tr>
+	</table>
+	</div>
+</div>
+</body>
+</html>
