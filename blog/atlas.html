@@ -1,0 +1,323 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="content-language" content="en" />
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<meta name="author" content="Milan Suk" />
+	<meta name="description" content="SkyAlt is a place where you program stuff />
+	<meta name="keywords" content="programming,low-code,no-code,ide,software,inhouse,internal,tools" />
+	<meta name="viewport" content="initial-scale=1.0" />
+
+	<link rel="icon" href="../favicon.ico" />
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600i,800i&display=swap" rel="stylesheet"> 
+
+	<title>SkyAlt</title>
+
+	<style type="text/css">
+	@font-face {
+	}
+	*{
+		padding: 0;
+		margin: 0;
+		font-family: arial;
+		font-family: 'Open Sans', sans-serif;
+	}
+	body {
+		font-size: 18px;
+		background: Rgba(247, 247, 247, 255);
+	}
+	a{
+		text-decoration: underline;
+		color: black;
+	}
+	h1{
+		padding-top: 50px;
+		padding-bottom: 50px;
+		text-align: center;
+
+		font-weight: 800;
+		font-size: 25px;
+		font-style: italic;
+		text-transform: uppercase;
+		word-spacing: 7px;
+	}
+	h2{
+		padding-top: 80px;
+		padding-bottom: 20px;
+		text-align: center;
+
+		font-weight: 800;
+		font-size: 23px;
+		font-style: italic;
+		text-transform: uppercase;
+	}
+	p{
+		text-align: left;
+		font-size: 18px;
+		line-height: 200%;
+	}
+
+	a:hover{
+		text-decoration: underline;
+		color: Rgba(210, 110, 100, 255);
+	}
+
+	#headerColor{
+		height: 320px;
+		padding-top: 30px;
+		/*padding-bottom: 20px;*/
+		/*background-image: linear-gradient(to bottom right, #f7d59c, #f7e7c7);*/
+		background-image: url(../back.png);
+	}
+	#header, #header2{
+		width: 720px;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}
+
+
+	#logo{
+		float: left;
+	}
+	#menu{
+		float: right;
+		padding: 20px;
+	}
+	#menu a{
+		margin-left: 15px;
+		margin-right: 15px;
+		display: inline-flex;
+		vertical-align: middle;
+	}
+	#menu a img{
+		margin-right: -20px;
+	}
+	#menu a.button {
+		height: 20px;
+		background: Rgba(230, 130, 80, 255);
+		border-radius: 3px;
+		text-color: black;
+		text-align: center;
+		padding: 5px 50px 5px 50px;
+		
+		border: 1px solid Rgba(210, 150, 100, 255);
+		border-right: 1px solid Rgba(200, 120, 70, 255);
+		border-bottom: 1px solid Rgba(200, 120, 70, 255);
+
+		font-size: 15px;
+		text-decoration : none;
+	}
+
+	#menu a.button:hover{
+		background: Rgba(250, 140, 80, 255);
+		color: black;
+	}
+
+	#description{
+		clear: both;
+	}
+
+	#info p{
+		padding-top: 50px;
+		padding-bottom: 50px;
+		text-align: right;
+	}
+
+
+
+	#contact p{
+		font-size: 15px;
+		text-align: center;
+	}
+	#contact table{
+		width: 700px;
+		background-color: #f6e8d8;
+		border-radius: 1em;
+		margin: 10px;
+		background-image: url(../back.png);
+	}
+	#contact table td{
+		font-weight: 600;
+		font-style: italic;
+		padding: 20px 0px 20px 0px;
+		border: 0;
+	}
+
+	video{
+		padding-top: 50px;
+		width:100%;
+	}
+
+	</style>
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-52132022-1"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'UA-52132022-1');
+	</script>
+</head>
+
+<body>
+<div id="headerColor">
+<div id="header">
+	<div id="logo">
+	<a href="../index.html"><img src="../logo.png" alt="Logo" width="150" height="56" /></a>
+	</div>
+
+	<div id="menu">
+	<a href="index.html" title="Other posts"><b>Articles</b></a>
+
+	<a href="index.html" title="Blog"><img src="../icons/blog32.png" alt="Blog" /></a>
+	<a href="https://github.com/milansuk/skyalt/" title="GitHub"><img src="../icons/github32.png" alt="GitHub" /></a>
+	<a href="https://twitter.com/milansuk" title="Twitter"><img src="../icons/twitter32.png" alt="Twitter" /></a>
+	<a href="mailto:milan@skyalt.com" title="E-mail"><img src="../icons/email32.png" alt="E-mail" /></a>
+	</div>
+
+	<div id="description">
+	<h1>IDE > Language > Protocol</h1>
+	</div>
+</div>
+</div>
+
+<div id="header2">
+
+<p>
+<br/><br/>
+<i>In the last <a href="inhouse.html">article</a> I outlined my vision for dapp platform. Let's talk about it more.</i>
+</p>
+
+
+
+	<h2>Blockchain != Early Web</h2>
+	<p>
+A lot of people compare blockchain to the early days of the web. They talk about it in the context that blockchain implementations have many problems(scale, txn fees, etc.) so there are not so many users. But the early web also had significant problems like HW was expensive or ISP higher prices: God damn it, you paid for every minute on-the-line! But so many people wanted to be part of the web anyway. Why?
+<br/><br/>
+
+Early websites had one huge advantage - easy to build. Back then there were only static websites and They were made by people who didn't have to know how to code because HTML alone is easy to produce and also you could make a document in MS Word and export it as a .html. Hosting was done through FTP. Websites started like a front-end(back-end was just a folder with HTML and image files). It wasn't like learning C++. <b>Anyone with a browser could be a consumer and creator without much sweat</b>.
+<br/><br/>
+
+I think this was driving web content up, drastically. I don't see anything like that in the blockchain world, because it's not easy to use! If you counted only users who installed and actively used some blockchain software, not users who just hold tokens(mostly bought through centralized 3rd parties), then the community would be way smaller than it looks like through media.
+<br/><br/>
+
+<i>Please keep in mind that I'm talking about EARLY days of the web. Today the situation is that you have to learn 3 languages(HTML, CSS, Javascript) and how they are connected to build a modern website. And that's just a front-end. You also have to know some database, SQL and another language(or Javascript) for the back-end. Uff.</i>
+	</p>
+
+
+
+	<h2>Inverse solution</h2>
+	<p>
+At the beginning of SkyAlt development, I set few basic rules:
+<br/><br/>
+1) Developer experience
+<br/>
+2) Safe & easy to read 'C' code
+<br/>
+3) Performance
+<br/>
+4) Memory footprint
+<br/><br/>
+
+This helps a lot during my SkyAlt journey. When I'm thinking about a new feature I'm trying to visualize it first, then how the developer could explain it to the computer through the language and then how I implement it in C code. In other words, <b>Developer first</b>!
+<br/><br/>
+
+In the blockchain world, Startups start with protocol and then moving more closer to humans(user interface). I believe that this direction should be the opposite. Also, SkyAlt is all in one. It's not divided between companies, one building protocol, another language and another IDE.
+	</p>
+
+
+
+	<h2>Atlas</h2>
+	<p>
+I've written a lot about the IDE and the language in previous articles, so let's have a look at prototype of the SkyAlt protocol. I called it Atlas.
+<br/><br/>
+
+In the last article, I try to avoid building Atlas, because much more research has to happen. Then I realized that I can build Atlas without consensus or implement a simple one, so developers can start using it and I can keep iterating on the protocol based on their experiences. A big part of designing a decentralized system is game theory and If I wanna solve it, I have to play the game.
+<br/><br/>
+
+The first thing I did was I wrote few smart contracts in Solidity and I search for the most pressing points in dapp development. I think the biggest problem is async communication. Sharding only makes it worst. Less messaging in code is definitely better. Code has to be easy to read and as simple as possible because bugs can be exploited and people may lose their tokens. Security audits will become a huge market in the future.
+<br/><br/>
+	</p>
+
+	<h2>Web3?</h2>
+	<p>
+The craziest thing I discover is Web3. I'm still not sure If I understand it right. Initially, I thought Web3 is the new web standard, but instead you have to install some key manager(Metamask, etc.) and import web3.js(something like a driver) into your website. I hope that Web3 "features" will be implemented into the web standard. Something like that already happened when HTML5 was born to kill Flash.
+<br/><br/>
+
+With the current Web3 design, I see one significant problem. If I wanna be sure that my "actions" went into the decentralized network, I have to go to the particular blockchain explorer(maybe even multiple ones) and see If my transactions are there. So, it's needed to have security audits not only for contracts(back-end) but also for the client, because it runs a full version of Javascript so it can do everything which is possible in Web2 and I wanna be sure that 100% of the back-end is store in decentralize network. <b>Web3 will need stronger sandboxing</b>.
+<br/><br/>
+
+Probably the biggest problem with crypto products right now is cryptography itself. For that billion people out there, everything needs to have "pointers" that people remember. PrivKeys, PubKeys, hashes, etc. can't be exposed to the users. Internet users never write IP address, because we have DNS. In particular words: "Satoshi" over "1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa". This problem is well known and many smart devs/designers have already worked on it.
+<br/><br/>
+
+Atlas consensus, routing, DNS, etc. are written in SkyAlt language and are part of blockchain with all changes(updates). So when you run blockchain from the genesis block, it will start with original algorithms for consensus, routing, etc., and update them at the specific time, when you go through blockchain. Pretty crazy, hah? But that's the future: Bitcoin saves only transactions, Ethereum saves bytecode and transactions, but why not save the complete history of changes for consensus, routing, etc. as well. Also, It will be possible to save SkyAlt 'C' source code and distribute binaries(Windows, Linux, Mac, Android, etc.) through blockchain.
+	</p>
+
+
+	<h2>Demo - Forum</h2>
+	<p>
+Let me describe what is happening in the video below.
+<br/><br/>
+
+I start by creating the new local app and paste already made code. Then I want to convert the app into dapp. I go to wallet, set Name(<i>@forum</i>) and initial Gas(<i>1000</i>) which will be withdraw from My other Dapp(<i>@genesis</i>, set later). I hit publish. The dialog shows up. The last thing I have to do is to choose Sender(<i>@genesis</i>) and I can see data that will be part of the transaction. After hitting Send, the message is signed by the sender and send into the routing app, which spreads the transaction to other nodes. Nodes put it into to block, execute it(register new dapp and @genesis is 1000 gas lighter) and mined the block(temporary PoW). The client is waiting when the @forum dapp is registered and then starts uploading the asset(code, icons, etc.). The publishing process is done.
+<br/><br/>
+
+I create a new thread(test) and add 2 messages(Hello, Bey) and 1 reply(Hmmm). To prove it to you, I go to the routing app which also works as a block explorer, so you can see complete history(dapp register, uploading asset, sending messages) in blocks. Fun!
+<br/><br/>
+
+Few notes. I tried to avoid crypto in GUI as possible, the only painful part is when you hit send, the dialog shows up because you have to confirm the transaction. I see few options on how to skip confirmation dialog, but I'm not really 100% happy with them.
+I spend a lot of time thinking about transaction throughput, the scale of the storage, light clients, dapps updates, which you can't see in video and sure there are tons of things that need to be finish and build from scratch, but I'm super happy with the progress.
+	</p>
+	<video controls poster="atlas/forum.jpg">
+	<source src="atlas/forum.mp4" type="video/mp4">
+	</video> 
+
+<p>
+<br/><br/>
+This is the complete code for Forum dapp. The code has 118 lines and It's all in one(GUI & "smart" contract). <i>The SkyAlt language is still work in progress</i>.
+<br/><br/>
+<a href="atlas/code.png"><img src="atlas/code.png" alt="Code" width="720" /></a>
+</p>
+
+	<h2>Summary</h2>
+	<p>
+In the 90s, websites were easy to make and host. That's something I don't see in blockchain projects. When that happens, blockchain will be everywhere.
+<br/><br/>
+
+I know it's not natural for technical people to start with how people feel using IDE, then project that to language design and finally define the protocol. It's even worst because you have to do it multiple times before you get it right.
+<br/><br/>
+
+I experienced today's state-of-the-art platforms to create DApps(front/back-end). There is still a lot of research that needs to be done. More UX designers in space, the better. And when something is branded like the Web3, it should be the new version of the web standard, not Web3js.
+<br/><br/>
+
+I presented the new protocol Atlas through the Forum demo. In the video, you can see that the end-user is not exposed to cryptography at all and the final decentralized application is few easy-to-read lines of code.
+<br/><br/>
+
+By the way, SkyAlt is only ~17K lines of C code. The rest is written in SkyAlt language. I will open-source SkyAlt soon! Can't wait to show you.
+	</p>
+
+
+	<div id="info">
+	<p><i>
+	Milan Suk<br/>
+	22nd April, 2021
+	</i></p>
+	</div>
+
+
+	<div id="contact">
+	<p>Thanks for reading, feel free to try SkyAlt, send me an email or follow me on Twitter(<a href="https://twitter.com/milansuk">@milansuk</a>).</p>
+	<table>
+		<tr>
+		<td><a href="index.html">Blog</a></td>
+		<td><a href="https://github.com/milansuk/skyalt/">GitHub</a></td>
+		<td><a href="https://twitter.com/milansuk">Twitter</a></td>
+		<td><a href="mailto:milan@skyalt.com">E-mail</a></td>
+		</tr>
+	</table>
+	</div>
+</div>
+</body>
+</html>

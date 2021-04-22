@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
@@ -7,9 +7,10 @@
 	<meta name="author" content="Milan Suk" />
 	<meta name="description" content="SkyAlt is a place where you program stuff />
 	<meta name="keywords" content="programming,low-code,no-code,ide,software,inhouse,internal,tools" />
-	
-	<link rel="icon" href="favicon.ico" />
+	<meta name="viewport" content="initial-scale=1.0" />
+	<meta name="viewport" content="initial-scale=1.0" />
 
+	<link rel="icon" href="favicon.ico" />
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600i,800i&display=swap" rel="stylesheet"> 
 
 	<title>SkyAlt</title>
@@ -25,33 +26,28 @@
 	}
 	body {
 		font-size: 18px;
+		background: Rgba(247, 247, 247, 255);
 	}
 	a{
 		text-decoration: underline;
 		color: black;
 	}
 	h1{
-		padding-top: 70px;
+		padding-top: 50px;
 		padding-bottom: 50px;
 		text-align: center;
 
 		font-weight: 800;
-		font-size: 30px;
+		font-size: 28px;
 		font-style: italic;
 		text-transform: uppercase;
 		word-spacing: 7px;
 	}
 	h2{
-		font-size: 25px;
-		padding-bottom: 50px;
+		padding-top: 80px;
+		padding-bottom: 20px;
 		text-align: center;
-		line-height: 150%;
-
-		/*word-spacing: 15px;*/
-		line-height: 200%;
-
-		font-weight: 400;
-		font-style: italic;
+		font-size: 20px;
 	}
 	h3{
 		font-size: 30px;
@@ -71,9 +67,11 @@
 	}
 
 	#headerColor{
-		padding-top: 20px;
-		padding-bottom: 20px;
-		background-image: linear-gradient(to bottom right, #ffff33, #74dcd4);
+		height: 320px;
+		padding-top: 30px;
+		/*padding-bottom: 20px;*/
+		/*background-image: linear-gradient(to bottom right, #f7d59c, #f7e7c7);*/
+		background-image: url(back.png);
 	}
 	#header, #header2{
 		width: 720px;
@@ -126,7 +124,7 @@
 	#posts table{
 		width: 100%;
 		text-align: left;
-		margin-top: 100px;
+		margin-top: 40px;
 		margin-bottom: 100px;
 		border-spacing: 0px;
 	}
@@ -139,7 +137,7 @@
 		color: Rgba(100, 100, 100, 255);
 	}
 	#posts table tr:hover{
-		background: Rgba(245, 245, 245, 255);
+		background: Rgba(240, 240, 240, 255);
 	}
 
 
@@ -149,9 +147,10 @@
 	}
 	#contact table{
 		width: 700px;
-		background-color: #dcf5f2;
+		background-color: #f6e8d8;
 		border-radius: 1em;
 		margin: 10px;
+		background-image: url(back.png);
 	}
 	#contact table td{
 		font-weight: 600;
@@ -189,15 +188,20 @@
 	</div>
 
 	<div id="description">
-	<h1>The place where you program stuff</h1>
-	<h2>My journey about making programming better</h2>
+	<h1>IDE for building decentralized apps</h1>
 	</div>
 </div>
 </div>
 
 <div id="header2">
+	<h2>My journey about making programming better</h2>
 	<div id="posts">
 	<table>
+		<tr>
+		<td><a href="blog/atlas.html">IDE > Language > Protocol</a></td>
+		<td><i>22nd April 2021</i></td>
+		</tr>
+
 		<tr>
 		<td><a href="blog/inhouse.html">In-house software</a></td>
 		<td><i>25th January 2021</i></td>
