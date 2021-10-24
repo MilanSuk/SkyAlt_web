@@ -1,5 +1,5 @@
 # SkyAlt
-My journey about making programming better
+Browse and build dApps
 
 ## Website
 https://www.skyalt.com/
