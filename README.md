@@ -1,5 +1,5 @@
 # SkyAlt
-Browse and build dApps
+Browse & build transparent apps
 
 ## Website
 https://www.skyalt.com/
