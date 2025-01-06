@@ -1,146 +1,114 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html>
+
 <head>
-	<meta http-equiv="content-language" content="en" />
-	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
-	<meta name="author" content="Milan Suk" />
-	<meta name="description" content="Build node-based, local-first, and LLM-powered apps." />
-	<meta name="keywords" content="node-based;local-first;LLM-powered,low-code,no-code,software" />
-	<meta name="viewport" content="width=740" />
-	<link rel="icon" href="favicon.ico" />
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600i,800i&display=swap" rel="stylesheet"> 
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Skyalt</title>
+	<meta name="description" content="todo ...">
 
-	<title>SkyAlt - The UI for AI</title>
+	<style media="screen">
+		@font-face {
+			font-family: Inter;
+			src: url('Inter-Regular.woff');
+		}
+		@font-face {
+			font-family: Inter;
+			src: url('Inter-Bold.woff');
+			font-weight: bold;
+		}
 
-	<style type="text/css">
-	@font-face {
-	}
-	*{
-		padding: 0;
-		margin: 0;
-		font-family: arial;
-		font-family: 'Open Sans', sans-serif;
-	}
-	body {
-		font-size: 18px;
-		background: Rgba(247, 247, 247, 255);
-	}
-	a{
-		text-decoration: underline;
-		/*color: black;*/
-		color: Rgba(28, 160, 150, 255);
-	}
-	h1{
-		padding-top: 50px;
-		text-align: center;
+		body {
+			font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
+			margin: 0;
+			padding: 0;
+			font-size: 16px;
+			background-color: #fff;
+		}
 
-		font-weight: 800;
-		font-size: 30px;
-		font-style: italic;
-		text-transform: uppercase;
-		word-spacing: 7px;
-	}
-	h2{
-		font-size: 20px;
-		padding-top: 40px;
-		padding-bottom: 0px;
-		text-align: center;
-	}
-	h3{
-		padding-top: 60px;
-		padding-bottom: 0px;
-		text-align: center;
-		font-size: 20px;
-		line-height: 300%;
-	}
-	p{
-		padding: 0px 0px 15px 0px;
-		line-height: 200%;
-	}
-	a:hover{
-		text-decoration: underline;
-		color: Rgba(210, 110, 100, 255);
-	}
-	#headerColor{
-		height: 370px;
-		padding-top: 30px;
-		/*padding-bottom: 20px;*/
-		/*background-image: linear-gradient(to bottom right, #f7d59c, #f7e7c7);*/
-		background-image: url(back_long.png);
-	}
-	#header, #header2{
-		width: 720px;
-		margin-left: auto;
-		margin-right: auto;
-		text-align: center;
-	}
-	#logo{
-		float: left;
-	}
-	#menu{
-		float: right;
-		padding: 20px;
-	}
-	#menu a{
-		margin-left: 15px;
-		margin-right: 15px;
-		display: inline-flex;
-		vertical-align: middle;
-	}
-	#menu a img{
-		margin-right: -20px;
-	}
-	#menu a.button {
-		height: 20px;
-		background: Rgba(230, 130, 80, 255);
-		border-radius: 3px;
-		text-color: black;
-		text-align: center;
-		padding: 5px 50px 5px 50px;
-		
-		border: 1px solid Rgba(210, 150, 100, 255);
-		border-right: 1px solid Rgba(200, 120, 70, 255);
-		border-bottom: 1px solid Rgba(200, 120, 70, 255);
+		#main {
+			max-width: 680px;
+			margin: 4% auto;
+			line-height: 1.5;
+			color: #222;
+			padding: 0 10px;
+		}
 
-		font-size: 15px;
-		text-decoration : none;
-	}
-	#menu a.button:hover{
-		background: Rgba(250, 140, 80, 255);
-		color: black;
-	}
-	#description{
-		clear: both;
-	}
+		h1 {
+			font-size: 2em;
+			margin-bottom: 0;
+		}
+
+		h2 {
+			font-size: 1.1em;
+			margin-top: 8%;
+		}
+
+		h3 {
+			font-size: 1.0em;
+			margin-top: 0;
+			color: #888;
+			font-weight: 400;
+		}
+
+		#demo{
+			text-align: center;
+			font-size: 1.1em;
+			font-weight: bold;
+			margin-top: 30px;
+		}
+		#demo a{
+			color: #3a61e0;
+		}
+		#links {
+			margin-top: 30px;
+		}
 	</style>
 </head>
 
 <body>
-<div id="headerColor">
-<div id="header">
-	<div id="logo">
-	<a href="index.html"><img src="logo.png" alt="Logo" width="150" height="56" /></a>
+	<div id="main">
+		<h1>Introducing Skyalt</h1>
+		<h3>January 6, 2025</h3>
+
+		<p>A new interface, which offers simplicity, local-first computing and LLM-assistant at the core.</p>
+
+		<p id="demo">
+		<a href="https://github.com/milansuk/skyalt">GitHub repository</a>
+		</p>
+
+		<h2>Why do we need it?</h2>
+
+		<p>Today's digital world is split into developers(producers) and users(consumers). The apps are fixed with many features we never use. Users can't reorganize layouts, remove components, etc..</p>
+		<p>Some apps have built-in AI, but UI is unique to every app.</p>
+		<p>We live in the cloud. As result, we don't have ownership and privacy for out data. Datacenters have lag and many apps don't have off-line mode. We have to register/login into apps.</p>
+		<p>Legacy operation systems are closed source code with telemetry build-in. They are drowning in complexity, lower stability and large & slow updates.</p>	
+		<p>HTML, CSS, Javascript standards became very large over the decades, so browsers have millions of lines of code.</p>
+
+		<h2>How is it different?</h2>
+
+		<p>First of all, Skyalt is not IDE with an LLM agent. Skyalt will not show you the code unless you want it. We made a big bet that generative coding will become so good that people will trust the LLMs.</p>
+		<p>Skyalt users have the ability to edit(or create from scratch) any application by prompting LLMs. You build what you need with natural language. Just use your voice and the cursor(provides precision).</p>
+		<p>This leads to that every Skyalt is different. It's tailored for user needs, so you don't have a screen full of features/options you don't need.</p>
+		<p>In the background, Skyalt has a simple system of widgets, which can be composed together into the app. Every app is actually a widget as well and it can be included in other apps.</p>
+		<p>GUI components(button, slider, checkbox, etc.) are widgets as well and every widget can be changed by LLM, so user can change their looks and functions as well. By the way, prompting(LLM assistant) is also a widget.</p>
+		<p>Skyalt simplifies everything above into an easy-to-use top header panel.</p>
+
+		<h2>Current state</h2>
+
+		<p>Skyalt is written in Golang. 100% code is under Apache 2.0. It's ~9K LOC and another ~10K for widgets code.</p>
+		<p>Layout and rendering engines are written from scratch. It's build on Linux, but should support all mainstream operation systems.</p>
+		<p>You can use cloud LLM services or go fully local-first with llama.cpp and whisper.cpp.</p>
+		<p>Prompting is text -> text. Multi-modality didn't provided so good results. Text-text is cheaper, faster and more stable.</p>
+		<p>Skyalt doesn't use function calling(which limits software with specific features). LLMs always generate code(golang), so any user requirement can be fulfilled.</p>
+		<p>Skyalt is under rapid research and development. Expect breaking changes and big improvements. Any feedback is appreciated!</p>
+
+		<p id="links">
+			Please, give us a <b>Star</b> on <a href="https://github.com/milansuk/skyalt">GitHub</a><br>
+			Latest news on 𝕏: <a href="https://x.com/milansuk">@milansuk</a><br>
+			Have a question or feedback: <a href="mailto:milan@skyalt.com">Email</a><br>
+		</p>
 	</div>
-
-	<div id="menu">
-
-	<!--a href="blog/index.html" title="Blog"><img src="icons/blog32.png" alt="Blog" /></a-->
-	<a href="https://github.com/skyaltlabs/skyalt/" title="GitHub"><img src="icons/github32.png" alt="GitHub" /></a>
-	<!--a href="https://twitter.com/milansuk" title="Twitter"><img src="icons/twitter32.png" alt="Twitter" /></a-->
-	<a href="mailto:milan@skyalt.com" title="E-mail"><img src="icons/email32.png" alt="E-mail" /></a>
-	<!--a href="rss.xml" title="RSS"><img src="icons/rss.png" alt="RSS" /></a!-->
-	</div>
-	<div id="description">
-	<h1>The UI for AI</h1>
-	<h2>Build node-based, local-first, and LLM-powered apps.</h2>
-	</div>
-</div>
-</div>
-
-<div id="header2">
-	<h3>SkyAlt is in alpha stage.<br />Please visit our <a href="https://github.com/skyaltlabs/skyalt/" title="GitHub">GitHub repo</a> for more information.</h3>
-</div>
-
 </body>
+
 </html>
