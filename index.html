@@ -88,15 +88,17 @@
 		<h2>How is it different?</h2>
 
 		<p>First of all, Skyalt is not IDE with an LLM agent. Skyalt will not show you the code unless you want it. We made a big bet that generative coding will become so good that people will trust the LLMs.</p>
-		<p>Skyalt users have the ability to edit(or create from scratch) any application by prompting LLMs. You build what you need with natural language. Just use your voice and the cursor(provides precision).</p>
+		<p>Skyalt users have the ability to edit(or create from scratch) any tool/UI by prompting LLMs. You build what you need with natural language. Just use your voice and the finger/cursor.</p>
 		<p>This leads to that every Skyalt is different. It's tailored for user needs, so you don't have a screen full of features/options you don't need.</p>
+		<p>In the background, Skyalt has a simple system of tools, which can be composed together and rendered on a screen. Every tool code can be modified by LLM. Almost everything in Skyalt is a tool, even LLM agent.</p>
+		<p>Skyalt simplifies everything above into an easy-to-use footer panel.</p>
 
 		<h2>Current state</h2>
 
-		<p>Skyalt is written in Golang. 100% code is under Apache 2.0. It's ~9K LOC and another ~10K for widgets code.</p>
+		<p>Skyalt is written in Golang. 100% code is under Apache 2.0. It's ~9K LOC and another ~10K for tools code.</p>
 		<p>Layout and rendering engines are written from scratch. It's build on Linux, but should support all mainstream operation systems.</p>
-		<p>You can use cloud LLM services or go fully local-first with llama.cpp and whisper.cpp.</p>
 		<p>Prompting is text -> text. Multi-modality didn't provided so good results. Text-text is cheaper, faster and more stable.</p>
+		<p>Skyalt doesn't use function calling(which limits software with specific features). LLMs always generate code(golang), so any user requirement can be fulfilled.</p>
 		<p>Skyalt is under rapid research and development. Expect breaking changes and big improvements. Any feedback is appreciated!</p>
 
 		<p id="links">
