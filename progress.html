@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Skyalt</title>
+	<meta name="description" content="todo ...">
+
+	<style media="screen">
+		@font-face {
+			font-family: Inter;
+			src: url('Inter-Regular.woff');
+		}
+		@font-face {
+			font-family: Inter;
+			src: url('Inter-Bold.woff');
+			font-weight: bold;
+		}
+
+		body {
+			font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
+			margin: 0;
+			padding: 0;
+			font-size: 16px;
+			background-color: #fff;
+		}
+
+		video {
+			display: block;
+
+			width: 100%;
+
+			margin: 0 auto;
+			margin-top: 5%;
+			margin-bottom: 5%;
+
+			padding: 10px;
+
+			border-radius: 25px;
+			border-style: solid;
+			border-width: 1px;
+			border-color: rgba(0, 0, 0, 0.2);
+
+			overflow: hidden;
+		}
+
+
+
+		#main {
+			max-width: 680px;
+			margin: 4% auto;
+			line-height: 1.5;
+			color: #222;
+			padding: 0 10px;
+		}
+
+		#desc {
+			text-align: center;
+		}
+
+
+
+		h1 {
+			font-size: 2em;
+			margin-bottom: 50px;
+			text-align: center;
+		}
+
+		h2 {
+			font-size: 1.5em;
+			margin-top: 8%;
+			margin-bottom: 0;
+
+		}
+
+		h3 {
+			font-size: 1.0em;
+			margin-top: 0;
+			color: #888;
+			font-weight: 400;
+		}
+
+	</style>
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-QJ1R191E7Y"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'G-QJ1R191E7Y');
+	</script>
+</head>
+
+
+<body>
+	<div id="main">
+		<h1>Skyalt: Beyond a chat interface</h1>
+
+<div id="desc">
+<p>
+Skyalt goal is to be a lightweight operating system made of prompts.
+</p>
+</div>
+
+		<video poster="resources/poster_v_0_2.jpg" src="resources/v_0_2.mp4" controls loop></video>
+
+		<h2>It's full of tools</h2>
+		<h3>September 20, 2025</h3>
+<p>
+What makes Skyalt unique is that the entire screen is made up of tools. Skyalt is built from first principles, which in software means structures and functions (also known as tools). Tools are described in plain English as prompts and the LLM converts them into code.<br />
+<br />
+<b>A tool may have a GUI</b>, so the screen is simply composed of tools.<br />
+For example: the list of tabs is a tool, the user input panel is a tool and even the list of tools is a tool.<br />
+</p>
+
+
+<p><i>
+Note: I`d like to re-implement GUI components(buttons, sliders, etc.) as tools(prompts). This would remove ~5K from Skyalt (~20K LOC).
+</i></p>
+
+
+
+		<h2>No more apps</h2>
+		<h3>October 9, 2025</h3>
+<p>
+An app is essentially a group of features that are usually "sandboxed" from other apps. This is very limiting, so I decided to un-design apps and let LLM decides how to mix tools, which can covers high range of use-cases.<br />
+<br />
+
+To give users a sense of workspaces, I implemented Tabs. Technically, a Tab is an LLM chat that only renders tool calls (with a GUI). Users can use the back and forward buttons to navigate between tools. Tool can be open as dialog.<br />
+<br />
+Because LLM doesn’t handle a large number of tools well (and it also gets expensive), Skyalt has panel with list of tools where users can enable or disable them. This hurts the user experience, but I hope it’s only a temporary concession.<br />
+<br />
+Also, some users saw the minimalistic layout and asked, "Now what?", so I added a Prompt menu — a context dialog with pre-defined user prompts.
+</p>
+
+
+
+		<h2>Brush</h2>
+		<h3>October 27, 2025</h3>
+<p>
+Navigation in Skyalt is done through natural language. When two people chat in real life, they combine verbal communication with gestures—for example, to point at something.<br />
+<br />
+In Skyalt, this is implemented by pressing the CTRL key and drawing with the mouse. Skyalt extracts information from the layout under the brush and adds it to the user’s prompt.<br />
+<br />
+It is also possible to draw while voice is recorded. When the user draws, keywords such as "this" "these", "here", etc. are replaced with the brush legend.<br />
+</p>
+
+
+
+		<h2>Third layer</h2>
+		<h3>November 19, 2025</h3>
+<p>
+Skyalt accepts prompts from the user and converts them into code (all tools are zero-shot), which is then compiled and executed.<br />
+- Layer 1 = code<br />
+- Layer 2 = prompts<br />
+<br />
+Recently, I have started working on Layer 3, which modifies the prompts in Layer 2(never touch Layer 1).<br />
+<br />
+I see several use cases for the third layer:<br />
+- <b>Security (Anti-virus/Anti-spyware***)</b>: When a user copies and pastes tool prompt from another source, it is useful to run an LLM-based safety check for potentially dangerous commands such as "Delete all files on disk" or "Send all files in /Documents to the {server}."<br />
+<br />
+- <b>Enhancement</b>: Some users may have difficulty writing effective tool prompts. The LLM can help by restructuring or refining the prompt, which can significantly improve the quality of the later generated code.<br />
+<br />
+- <b>Multimodal Integration</b>: The user can draw on the screen using the brush and the LLM can modify the tool prompt based on the screenshot.<br />
+</p>
+
+<p>
+Soon, L3 will become the most important layer. Prompts(L2) are written in natural language, but it is still easy for non-technical people to make mistakes. L3 can filter out paradoxes, ask additional questions and carefully edit and maintain L2.
+</p>
+
+
+
+<p>
+<i>*** If code is zero-shot from a prompt (or documentation), then future antivirus will be LLM that scan prompts. This will provide much higher security than scanning running programs or executable files.</i>
+</p>
+
+
+
+		<h2>Everything is a prompt - part 1</h2>
+		<h3>December 12, 2025</h3>
+<p>I have started re-implementing many previously hard-coded functions as tools. At this point, only the SDL layer (windowing, I/O, etc.) and the rendering and layout engines remain hard-coded. Everything else has been converted into tools.<br />
+<br />
+Some examples of what is now implemented as tool:<br />
+	- LLM API connectors.<br />
+	- <b>GUI primitives</b>(Button, Slider, Calendar, Map, etc.).<br />
+	- Context engineering (generating code from tools prompts) and tools compilation.<br />
+<br />
+This change has a significant impact on the user experience:<br />
+	- <b>Full customization</b>: Everything displayed on the screen can be edited.<br />
+	- <b>Translations</b>: Prompts can be translated into different language, so the newly generated code will have all string constants translated.<br />
+<br />
+<i>Note: This is Part 1, which focused on preparing the architecture. The goal of Part 2 is to write a prompt for every tool. Part 3 could be generating prompts into other programming languages.</i>
+</p>
+
+
+	</div>
+</body>
+
+</html>
