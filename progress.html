@@ -26,7 +26,7 @@
 			background-color: #fff;
 		}
 
-		video {
+		video, iframe {
 			display: block;
 
 			width: 100%;
@@ -44,8 +44,6 @@
 
 			overflow: hidden;
 		}
-
-
 
 		#main {
 			max-width: 680px;
@@ -104,53 +102,38 @@ Skyalt goal is to be a lightweight operating system made of prompts.
 </p>
 </div>
 
-		<video poster="resources/poster_v_0_2.jpg" src="resources/v_0_2.mp4" controls loop></video>
 
-		<h2>It's full of tools</h2>
-		<h3>September 20, 2025</h3>
-<p>
-What makes Skyalt unique is that the entire screen is made up of tools. Skyalt is built from first principles, which in software means structures and functions (also known as tools). Tools are described in plain English as prompts and the LLM converts them into code.<br />
+
+		<h2>Version 0.2 demo</h2>
+		<h3>January 3, 2026</h3>
+<iframe height="340" src="https://www.youtube.com/embed/jYGZ6N84vrU"></iframe>
+<p>This is short video(+audio) of Skyalt v0.2. Model is grok-4-1-fast-reasoning.<br />
 <br />
-<b>A tool may have a GUI</b>, so the screen is simply composed of tools.<br />
-For example: the list of tabs is a tool, the user input panel is a tool and even the list of tools is a tool.<br />
-</p>
-
-
-<p><i>
-Note: I`d like to re-implement GUI components(buttons, sliders, etc.) as tools(prompts). This would remove ~5K from Skyalt (~20K LOC).
-</i></p>
-
-
-
-		<h2>No more apps</h2>
-		<h3>October 9, 2025</h3>
-<p>
-An app is essentially a group of features that are usually "sandboxed" from other apps. This is very limiting, so I decided to un-design apps and let LLM decides how to mix tools, which can covers high range of use-cases.<br />
-<br />
-
-To give users a sense of workspaces, I implemented Tabs. Technically, a Tab is an LLM chat that only renders tool calls (with a GUI). Users can use the back and forward buttons to navigate between tools. Tool can be open as dialog.<br />
-<br />
-Because LLM doesn’t handle a large number of tools well (and it also gets expensive), Skyalt has panel with list of tools where users can enable or disable them. This hurts the user experience, but I hope it’s only a temporary concession.<br />
-<br />
-Also, some users saw the minimalistic layout and asked, "Now what?", so I added a Prompt menu — a context dialog with pre-defined user prompts.
+<i>Note: I cut off parts when Grok was generating reasoning tokens(not shared with the client). I’m running a Whisper.cpp server locally, and a few times I had to fix the transcribed text(also cut off).</i>
 </p>
 
 
 
-		<h2>Brush</h2>
-		<h3>October 27, 2025</h3>
-<p>
-Navigation in Skyalt is done through natural language. When two people chat in real life, they combine verbal communication with gestures—for example, to point at something.<br />
+<h2>Everything is a prompt - part 1</h2>
+<h3>December 12, 2025</h3>
+<p>I have started re-implementing many previously hard-coded functions as tools. At this point, only the SDL layer (windowing, I/O, etc.) and the rendering and layout engines remain hard-coded. Everything else has been converted into tools.<br />
 <br />
-In Skyalt, this is implemented by pressing the CTRL key and drawing with the mouse. Skyalt extracts information from the layout under the brush and adds it to the user’s prompt.<br />
+Some examples of what is now implemented as tool:<br />
+	- LLM API connectors.<br />
+	- <b>GUI primitives</b>(Button, Slider, Calendar, Map, etc.).<br />
+	- Context engineering (generating code from tools prompts) and tools compilation.<br />
 <br />
-It is also possible to draw while voice is recorded. When the user draws, keywords such as "this" "these", "here", etc. are replaced with the brush legend.<br />
+This change has a significant impact on the user experience:<br />
+	- <b>Full customization</b>: Everything displayed on the screen can be edited.<br />
+	- <b>Translations</b>: Prompts can be translated into different language, so the newly generated code will have all string constants translated.<br />
+<br />
+<i>Note: This is Part 1, which focused on preparing the architecture. The goal of Part 2 is to write a prompt for every tool. Part 3 could be generating prompts into other programming languages.</i>
 </p>
 
 
 
-		<h2>Third layer</h2>
-		<h3>November 19, 2025</h3>
+<h2>Third layer</h2>
+<h3>November 19, 2025</h3>
 <p>
 Skyalt accepts prompts from the user and converts them into code (all tools are zero-shot), which is then compiled and executed.<br />
 - Layer 1 = code<br />
@@ -165,34 +148,53 @@ I see several use cases for the third layer:<br />
 <br />
 - <b>Multimodal Integration</b>: The user can draw on the screen using the brush and the LLM can modify the tool prompt based on the screenshot.<br />
 </p>
-
 <p>
 Soon, L3 will become the most important layer. Prompts(L2) are written in natural language, but it is still easy for non-technical people to make mistakes. L3 can filter out paradoxes, ask additional questions and carefully edit and maintain L2.
 </p>
-
-
-
 <p>
 <i>*** If code is zero-shot from a prompt (or documentation), then future antivirus will be LLM that scan prompts. This will provide much higher security than scanning running programs or executable files.</i>
 </p>
 
 
 
-		<h2>Everything is a prompt - part 1</h2>
-		<h3>December 12, 2025</h3>
-<p>I have started re-implementing many previously hard-coded functions as tools. At this point, only the SDL layer (windowing, I/O, etc.) and the rendering and layout engines remain hard-coded. Everything else has been converted into tools.<br />
+<h2>Brush</h2>
+<h3>October 27, 2025</h3>
+<p>
+Navigation in Skyalt is done through natural language. When two people chat in real life, they combine verbal communication with gestures—for example, to point at something.<br />
 <br />
-Some examples of what is now implemented as tool:<br />
-	- LLM API connectors.<br />
-	- <b>GUI primitives</b>(Button, Slider, Calendar, Map, etc.).<br />
-	- Context engineering (generating code from tools prompts) and tools compilation.<br />
+In Skyalt, this is implemented by pressing the CTRL key and drawing with the mouse. Skyalt extracts information from the layout under the brush and adds it to the user’s prompt.<br />
 <br />
-This change has a significant impact on the user experience:<br />
-	- <b>Full customization</b>: Everything displayed on the screen can be edited.<br />
-	- <b>Translations</b>: Prompts can be translated into different language, so the newly generated code will have all string constants translated.<br />
-<br />
-<i>Note: This is Part 1, which focused on preparing the architecture. The goal of Part 2 is to write a prompt for every tool. Part 3 could be generating prompts into other programming languages.</i>
+It is also possible to draw while voice is recorded. When the user draws, keywords such as "this" "these", "here", etc. are replaced with the brush legend.<br />
 </p>
+
+
+
+<h2>No more apps</h2>
+<h3>October 9, 2025</h3>
+<p>
+An app is essentially a group of features that are usually "sandboxed" from other apps. This is very limiting, so I decided to un-design apps and let LLM decides how to mix tools, which can covers high range of use-cases.<br />
+<br />
+To give users a sense of workspaces, I implemented Tabs. Technically, a Tab is an LLM chat that only renders tool calls (with a GUI). Users can use the back and forward buttons to navigate between tools. Tool can be open as dialog.<br />
+<br />
+Because LLM doesn’t handle a large number of tools well (and it also gets expensive), Skyalt has panel with list of tools where users can enable or disable them. This hurts the user experience, but I hope it’s only a temporary concession.<br />
+<br />
+Also, some users saw the minimalistic layout and asked, "Now what?", so I added a Prompt menu — a context dialog with pre-defined user prompts.
+</p>
+
+
+
+<h2>It's full of tools</h2>
+<h3>September 20, 2025</h3>
+<p>
+What makes Skyalt unique is that the entire screen is made up of tools. Skyalt is built from first principles, which in software means structures and functions (also known as tools). Tools are described in plain English as prompts and the LLM converts them into code.<br />
+<br />
+<b>A tool may have a GUI</b>, so the screen is simply composed of tools.<br />
+For example: the list of tabs is a tool, the user input panel is a tool and even the list of tools is a tool.<br />
+</p>
+<p><i>
+Note: I`d like to re-implement GUI components(buttons, sliders, etc.) as tools(prompts). This would remove ~5K from Skyalt (~20K LOC).
+</i></p>
+
 
 
 	</div>
